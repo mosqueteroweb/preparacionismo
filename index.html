@@ -26,7 +26,7 @@
 <body>
 <header>
   <h1>🛡️ Wiki Preparacionismo</h1>
-  <button onclick="exportZip()">⬇️ Exportar web (ZIP)</button>
+  <button onclick="location.href='wikiprep.zip'">⬇️ Exportar web (ZIP)</button>
 </header>
 <div class="layout">
   <nav>
@@ -58,43 +58,12 @@
 </div>
 </section></main>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script>
 function filter(){
   const q=document.getElementById('search').value.toLowerCase();
   document.querySelectorAll('.tiddler').forEach(s=>{
     s.style.display=s.innerText.toLowerCase().includes(q)?'':'none';
   });
-}
-async function exportZip(){
-  if(typeof JSZip==='undefined'){alert('Cargando librería ZIP, inténtalo en unos segundos...');return;}
-  const btn=document.querySelector('header button');
-  const old=btn.textContent; btn.textContent='⏳ Generando...'; btn.disabled=true;
-  try{
-    const zip=new JSZip();
-    zip.file('index.html', document.documentElement.outerHTML);
-    const dirs=['img','video','pdf'];
-    for(const d of dirs){
-      // buscar rutas relativas referenciadas en el HTML
-      const re=new RegExp(d+'/[^"\\\'\\s)]+','g');
-      const found=new Set([...document.documentElement.outerHTML.matchAll(re)].map(m=>m[0]));
-      for(const rel of found){
-        try{
-          const r=await fetch(rel);
-          if(r.ok){ const buf=await r.arrayBuffer(); zip.file(rel, buf); }
-        }catch(e){ console.warn('No se pudo añadir',rel,e); }
-      }
-    }
-    const blob=await zip.generateAsync({type:'blob'});
-    const a=document.createElement('a');
-    a.href=URL.createObjectURL(blob);
-    const mm=String(new Date().getMonth()+1).padStart(2,'0');
-    const yyyy=new Date().getFullYear();
-    a.download='wikiprep-'+mm+'-'+yyyy+'.zip';
-    a.click();
-    URL.revokeObjectURL(a.href);
-  }catch(e){ alert('Error: '+e.message); }
-  finally{ btn.textContent=old; btn.disabled=false; }
 }
 </script>
 </body>
