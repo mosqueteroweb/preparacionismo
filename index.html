@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wiki Preparacionismo</title>
+<style>
+  body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#f4f1ea;color:#222}
+  header{background:#3a5a40;color:#fff;padding:1rem;position:sticky;top:0}
+  header h1{margin:0;font-size:1.3rem}
+  .layout{display:flex;min-height:80vh}
+  nav{width:240px;background:#344e41;color:#fff;padding:1rem;flex-shrink:0}
+  nav ul{list-style:none;padding:0;margin:0}
+  nav a{color:#dad7cd;text-decoration:none;display:block;padding:.4rem 0}
+  nav a:hover{color:#fff}
+  main{flex:1;padding:1.5rem;max-width:800px}
+  .tiddler{border-bottom:1px solid #ccc;padding:1rem 0}
+  .tags .tag{background:#a3b18a;color:#1c2b1f;border-radius:4px;padding:.1rem .5rem;font-size:.75rem;margin-right:.3rem}
+  .body img{max-width:100%}
+  input#search{width:100%;padding:.5rem;margin-bottom:1rem;border-radius:6px;border:1px solid #ccc}
+  @media(max-width:600px){.layout{flex-direction:column}nav{width:100%}}
+</style>
+</head>
+<body>
+<header><h1>🛡️ Wiki Preparacionismo</h1></header>
+<div class="layout">
+  <nav>
+    <input id="search" placeholder="Buscar..." onkeyup="filter()">
+    <ul id="navlist"><li><a href="#Presentaci%C3%B3n">Presentación</a></li>
+<li><a href="#T%C3%A9cnica%20de%20gancho%20de%20emergencia%20(iPaul)">Técnica de gancho de emergencia (iPaul)</a></li></ul>
+  </nav>
+  <main>
+<section class="tiddler" id="Presentaci%C3%B3n">
+  <h2>Presentación</h2>
+  <div class="tags"><span class="tag">Portada</span></div>
+  <div class="body"><h1>Bienvenido a la Wiki de Preparacionismo</h1><p>Esta es una recopilación de recursos, técnicas y materiales para la <a href="https://es.wikipedia.org/wiki/Supervivencia" target="_blank">preparación</a> y la resiliencia personal y familiar.</p><p>Los contenidos se organizan por categorías:</p><ul><li><a href="#">Agua</a></li><li><a href="#">Alimentación</a></li><li><a href="#">Refugio</a></li><li><a href="#">Salud</a></li><li><a href="#">Comunicaciones</a></li><li><a href="#">Herramientas</a></li><li><a href="#">Legislación</a></li></ul><p>Cada artículo puede incluir texto, imágenes y vídeos almacenados localmente. Usa el buscador o las etiquetas para navegar.</p><p><i>Cómo colaborar:</i> los artículos se añaden desde el asistente (Hermes) y se publican automáticamente mediante GitHub Pages.</p></div>
+</section>
+
+<section class="tiddler" id="T%C3%A9cnica%20de%20gancho%20de%20emergencia%20(iPaul)">
+  <h2>Técnica de gancho de emergencia (iPaul)</h2>
+  <div class="tags"><span class="tag">Herramientas</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Técnica de gancho de emergencia (日本防災士)</h1><p>Vídeo demostrativo de un <a href="https://es.wikipedia.org/wiki/Gesti%C3%B3n_de_riesgos" target="_blank">防災士</a> (especialista japonés en prevención de desastres) mostrando cómo hacer un gancho de rescate anudando una cuerda a un palo, para recuperar objetos caídos en rendijas estrechas o situaciones de emergencia.</p><p></p><p><b>Enunciado original:</b> 演示紧急抓取棒的打结法 — cuando algo cae en una grieta estrecha, también puedes recuperarlo. Súper útil en momentos de emergencia.</p><p><b>Aplicación en preparacionismo:</b> técnica de baja tecnología, útil en buzones, desagües, rendijas de vehículos o estructuras colapsadas donde no llegan las manos.</p>
+<video src="video/iPaul-emergencia-ganzua.mp4" controls preload="metadata" style="width:100%;max-width:640px;border-radius:8px;"></video>
+</div>
+</section></main>
+</div>
+<script>
+function filter(){
+  const q=document.getElementById('search').value.toLowerCase();
+  document.querySelectorAll('.tiddler').forEach(s=>{
+    s.style.display=s.innerText.toLowerCase().includes(q)?'':'none';
+  });
+}
+</script>
+</body>
+</html>
