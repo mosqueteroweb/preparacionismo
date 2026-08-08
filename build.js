@@ -13,7 +13,7 @@ const OUT = path.join(ROOT, 'index.html');
 // Categorías base (orden de menú). Se añade "Otros" si un artículo no encaja.
 // Enfoque: PREPARACIONISMO para eventos (Inundación, Fuego, Nevadas, Virus/Confinamiento)
 // + temas transversales (Agua, Alimentación, Salud, Comunicaciones, Documentación, Energía/luz, Herramientas).
-const CATEGORIES = ['Inundación','Fuego','Nevadas','Virus/Confinamiento','Apagón','Agua','Alimentación','Salud','Comunicaciones','Documentación','Energía/luz','Herramientas','Otros'];
+const CATEGORIES = ['Inundación','Fuego','Nevadas','Virus/Confinamiento','Apagón','Agua','Alimentación','Salud','Comunicaciones','Documentación','Energía/luz','Herramientas'];
 // Icono por categoría (emoji)
 const CAT_ICON = {
   'Inundación': '🌊',
