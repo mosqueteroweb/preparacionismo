@@ -1,17 +1,26 @@
-# Vídeos candidatos (<5 min) para la Wiki de Preparacionismo
+# Vídeos candidatos para la Wiki de Preparacionismo
 
-Vídeos de YouTube en castellano verificados por duración. Etiqueta: <3min / 3-5min.
-NOTA: regla actual = se descargan solo los <3 min (144p+audio). Los de 3-5 min se dejan como visor YouTube
-hasta que Pedro decida subir el límite a 5 min (en mínima calidad pesan ~3-5 MB).
+Vídeos de YouTube en castellano, SOLO PRÁCTICOS (tutoriales, "cómo hacer", DIY).
+NO charlas/conversaciones, NO animales. Pedro revisa duración/pertinencia e decide inclusión.
 
-## Bloque 1 (1-10) — encontrados hasta ahora: 5 reales <5 min
+## Bloque 1 (vigentes)
 
-1. [<3min · 38s] Increíble nudo de supervivencia que todos deberían conocer · https://www.youtube.com/watch?v=9IcaMyyRK10 · Nudo de supervivencia (truco). · Herramientas
-2. [<3min · 74s] Nudo de supervivencia: el truco que puede salvarte · https://www.youtube.com/watch?v=2D4S5rkl5Cs · Nudo de supervivencia. · Herramientas
-3. [<3min · 38s] This extreme survival knot will save your life · https://www.youtube.com/watch?v=EW97Z5mtlkA · Nudo de supervivencia (título en inglés, contenido universal). · Herramientas
-4. [<3min · 12s] ¡El TRUCO de supervivencia definitivo! · https://www.youtube.com/watch?v=P1JLOBO-H78 · Truco rápido de supervivencia. · Herramientas
-5. [3-5min · 283s] Cómo hacer un FILTRO de AGUA CASERO (paso a paso) · https://www.youtube.com/watch?v=L4d-k6riEaU · Filtro de agua casero fácil. · Agua
+1. Mochila De Supervivencia Para 72 Horas · https://www.youtube.com/watch?v=HK8fnGEOsHs · 🛠️ Kit 72h.
+2. Kit de emergencia 72 horas | Lo que necesitas · https://www.youtube.com/watch?v=DVtnuhfujVM · 🛠️ Kit 72h.
+3. PREPPERS: CÓMO ALMACENAR AGUA POR AÑOS · https://www.youtube.com/watch?v=1cwGO5vVPeE · 💧 Almacenar agua.
+4. Cómo Almacenar Agua en Caso de Emergencia · https://www.youtube.com/watch?v=-fp8cNU2k84 · 💧 Almacenar agua.
+5. Luz de emergencia casera, automática, muy fácil de hacer · https://www.youtube.com/watch?v=i7bsMAgm7mk · 🔌 Apagón (luz).
+9. Que no falte kit de supervivencia #apagón #nevera #radio... · https://www.youtube.com/watch?v=2cvfOzpS2ek · 🔌 Apagón (nevera/radio).
+10. ¿Cómo hacer un filtro de agua casero? · https://www.youtube.com/watch?v=ywQfrQC96Tc · 💧 Filtro agua DIY.
+12. Seguridad: cómo apagar fuego en cocina (NO eches agua) · https://www.youtube.com/watch?v=0uUHkW_vEmo · 🔥 Fuego (cocina).
+13. Cómo apagar un fuego de cocina de forma segura · https://www.youtube.com/watch?v=kgWZlASkYyw · 🔥 Fuego (cocina).
 
-## Bloque 1 (faltan 5 para completar 10) — EN BUSQUEDA
-
-## Bloque 2 (11-20) — PENDIENTE
+## Descartados
+- #6 Cómo SELLAR Ventanas para que NO entre AGUA → descartado por Pedro.
+- #7 Nunca subas al ático durante inundación sin ESTA... → descartado por Pedro.
+- #8 Máscara Protectora contra virus. Plantilla para hacerla → descartado por Pedro.
+- #11 Paso a paso: Cómo hacer un filtro casero → descartado por Pedro.
+- #14 ORGANIZA los ARCHIVOS y CARPETAS → descartado por Pedro.
+- #15 How to Survive a Flood? (inglés) → descartado (idioma).
+- Preparación de alimentos para animales en confinamiento (animales) → descartado.
+- #49 CÓMO SOBREVIVIR AL COLAPSO, Qué es el Preparacionismo/Survivalismo, Preparacionismo y Radio (conversación/intro) → no prácticos, en espera.
