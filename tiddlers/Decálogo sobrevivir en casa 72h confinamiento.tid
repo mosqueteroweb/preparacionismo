@@ -7,33 +7,33 @@ type: text/vnd.tiddlywiki
 Si no puedes salir de casa por cualquier razón —nevada, incendio cercano, inundación o virus—, el objetivo es aguantar al menos 72 horas autónomo en tu domicilio. Esto es lo que hay que tener preparado.
 
 # 1. Agua: 14 litros por persona
-Lo primero y más crítico. Calcula **1 galón (≈4 L) por persona y día**; para 72h, unos **12–14 L por persona** (más si hay niños, ancianos o mascotas). Almacena en garrafas limpias, botellas PET y depósitos cerrados, lejos de la luz y productos químicos. Ver artículos de [[almacenamiento de agua|Cómo almacenar agua para emergencias]] y [[filtro casero|Cómo hacer un filtro de agua casero]].
+Lo primero y más crítico. Calcula **1 galón (≈4 L) por persona y día**; para 72h, unos **12–14 L por persona** (más si hay niños, ancianos o mascotas). Almacena en garrafas limpias, botellas PET y depósitos cerrados, lejos de la luz y productos químicos. Ver la categoría <a href="#" onclick="show('cat-Agua')">💧 Agua</a> (almacenamiento y filtro casero).
 
 # 2. Comida: 3 días sin cocina
 Conservas, latas, platos deshidratados, frutos secos, galletas y barritas. Prioriza comida que no necesite nevera ni fuego. Abrir la nevera el mínimo: con corte eléctrico aguanta frío ~4h (24h si está llena y cerrada).
 
 # 3. Luz y energía de respaldo
-Linternas, velas, frontales y baterías. Una [[luz de emergencia con sal y aceite|Luz de emergencia con sal y aceite (apagón)]] o [[luz casera automática|Luz de emergencia casera automática]] evitan depender de la red. Powerbank cargado para el móvil.
+Linternas, velas, frontales y baterías. Una <a href="#" onclick="show('cat-Apag%C3%B3n')">🔌 luz de emergencia con sal y aceite</a> o <a href="#" onclick="show('cat-Apag%C3%B3n')">🔌 luz casera automática</a> evitan depender de la red. Powerbank cargado para el móvil.
 
 # 4. Información: radio y carga
-Una [[radio portátil|Retekess V115 — radio portátil todo en uno]] o walkie para recibir avisos cuando caen datos móviles. Cargador de batería/externo y, si es posible, placa solar pequeña.
+Una <a href="#" onclick="show('cat-Comunicaciones')">📡 radio portátil</a> o walkie para recibir avisos cuando caen datos móviles. Cargador de batería/externo y, si es posible, placa solar pequeña.
 
 # 5. Calor y aislamiento
-Mantas, ropa de abrigo por capas y, en frío extremo (nevada), aislar ventanas con cartón/burbuja. Nunca usar brasa ni estufa de combustión dentro de casa sin ventilación (riesgo de monóxido).
+Mantas, ropa de abrigo por capras y, en frío extremo (nevada), aislar ventanas con cartón/burbuja. Nunca usar brasa ni estufa de combustión dentro de casa sin ventilación (riesgo de monóxido).
 
 # 6. Botiquín y salud
-[[Botiquín de emergencias|Botiquín de emergencias]], medicación habitual (al menos 7 días), agua oxigenada, gasas, analgésico, termómetro. Mascarillas y gel hidroalcohólico para el caso virus.
+<a href="#" onclick="show('cat-Salud')">⚕️ Botiquín de emergencias</a>, medicación habitual (al menos 7 días), agua oxigenada, gasas, analgésico, termómetro. Mascarillas y gel hidroalcohólico para el caso virus.
 
 # 7. Documentación y efectivo
 Copia de DNI, seguros, recetas y contactos en una carpeta impermeable (física y USB). Efectivo en pequeño: en apagón los TPV no funcionan.
 
 # 8. Comunicaciones familiares
-Acordar un punto de encuentro y un contacto fuera de la zona (más fácil de localar). Mantener el móvil con batería y usarlo solo para mensajes cortos ( consumen menos que llamadas).
+Acordar un punto de encuentro y un contacto fuera de la zona (más fácil de localar). Mantener el móvil con batería y usarlo solo para mensajes cortos (consumen menos que llamadas).
 
 # 9. Higiene básica
 Papel higiénico, jabón, lejía diluida para desinfectar superficies, bolsas de basura y agua para lavar manos. La higiene evita que un confinamiento por virus se agrave.
 
 # 10. Mochila 72h lista por si hay que evacuar
-Aunque el plan es quedarse, ten preparada la [[mochila de 72h|Mochila y kit de emergencia para 72 horas]] por si la orden cambia a evacuación (incendio que avanza, inundación que sube).
+Aunque el plan es quedarse, ten preparada la <a href="#" onclick="show('cat-Herramientas')">🛠️ mochila de 72h</a> por si la orden cambia a evacuación (incendio que avanza, inundación que sube).
 
 '''Aplicación en preparacionismo:''' este decálogo cubre los cuatro eventos de la wiki (inundación, fuego, nevadas, virus/apagón) desde el escenario "qué tengo en casa". Es la página de partida para organizar reservas.
