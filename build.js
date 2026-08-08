@@ -12,6 +12,17 @@ const OUT = path.join(ROOT, 'index.html');
 
 // Categorías base (orden de menú). Se añade "Otros" si un artículo no encaja.
 const CATEGORIES = ['Agua', 'Alimentación', 'Refugio', 'Salud', 'Comunicaciones', 'Herramientas', 'Legislación'];
+// Icono por categoría (emoji)
+const CAT_ICON = {
+  'Agua': '💧',
+  'Alimentación': '🥕',
+  'Refugio': '⛺',
+  'Salud': '⚕️',
+  'Comunicaciones': '📡',
+  'Herramientas': '🛠️',
+  'Legislación': '⚖️',
+  'Otros': '📁'
+};
 
 function parseTid(raw) {
   const lines = raw.split('\n');
@@ -95,7 +106,7 @@ function build() {
       `<li><a href="#" onclick="show('${encodeURIComponent(t.meta.title)}')">${t.meta.title}</a></li>`).join('\n');
     const cid = 'cat-' + encodeURIComponent(c);
     return `<section class="view" id="${cid}">
-  <h2>📂 ${c}</h2>
+  <h2>${CAT_ICON[c]||''} ${c}</h2>
   <p class="catdesc">Artículos en la categoría <b>${c}</b>:</p>
   <ul class="catlist">${links}</ul>
 </section>`;
@@ -103,7 +114,7 @@ function build() {
 
   // Menú: Inicio + categorías
   const navCats = CATEGORIES.concat(['Otros']).filter(c => groups[c].length)
-    .map(c => `<li><a href="#" onclick="show('cat-${encodeURIComponent(c)}')">${c}</a></li>`).join('\n');
+    .map(c => `<li><a href="#" onclick="show('cat-${encodeURIComponent(c)}')">${CAT_ICON[c]||''} ${c}</a></li>`).join('\n');
   const nav = `<li><a href="#" onclick="show('${homeId}')"><b>🏠 Inicio</b></a></li>\n${navCats}`;
 
   const html = `<!doctype html>
