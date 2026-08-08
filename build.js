@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 /* build.js — ensambla index.html a partir de los .tid en tiddlers/
-   Motor mínimo TiddlyWiki-compatible (solo render básico de texto/wiki).
+   Motor mínimo (render básico de texto/wiki) + exportar ZIP offline.
    Dependencias: ninguna (Node built-in). */
 const fs = require('fs');
 const path = require('path');
 
-const TID_DIR = path.join(__dirname, 'tiddlers');
-const OUT = path.join(__dirname, 'index.html');
-const MEDIA = { img: 'img', video: 'video' };
+const ROOT = __dirname;
+const TID_DIR = path.join(ROOT, 'tiddlers');
+const OUT = path.join(ROOT, 'index.html');
 
 function parseTid(raw) {
   const lines = raw.split('\n');
@@ -23,14 +23,13 @@ function parseTid(raw) {
   return { meta, body };
 }
 
-// Conversión wiki mínima: [[texto|url]] -> link, '''x''' -> <b>, ''x'' -> <i>, ! -> h1, * -> ul
+// Conversión wiki mínima
 function wiki2html(body) {
   let h = body
     .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '<a href="$2" target="_blank">$1</a>')
     .replace(/\[\[([^\]]+)\]\]/g, '<a href="#">$1</a>')
     .replace(/'''([^']+)'''/g, '<b>$1</b>')
     .replace(/''([^']+)''/g, '<i>$1</i>');
-  // líneas
   const blocks = h.split('\n');
   let out = '', inList = false;
   for (let line of blocks) {
@@ -42,10 +41,24 @@ function wiki2html(body) {
   return out;
 }
 
-// Extraer <html>...</html> sin procesar (para video embebido)
 function extractRawHtml(body) {
   const m = body.match(/<html>([\s\S]*?)<\/html>/);
   return m ? m[1] : '';
+}
+
+// Recolecta todos los archivos de media (img/, video/, pdf/) que existan
+function collectMediaDirs() {
+  const dirs = ['img', 'video', 'pdf'];
+  const files = []; // {rel, abs}
+  for (const d of dirs) {
+    const abs = path.join(ROOT, d);
+    if (!fs.existsSync(abs)) continue;
+    for (const f of fs.readdirSync(abs)) {
+      const fabs = path.join(abs, f);
+      if (fs.statSync(fabs).isFile()) files.push({ rel: `${d}/${f}`, abs: fabs });
+    }
+  }
+  return files;
 }
 
 function build() {
@@ -80,8 +93,10 @@ function build() {
 <title>Wiki Preparacionismo</title>
 <style>
   body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#f4f1ea;color:#222}
-  header{background:#3a5a40;color:#fff;padding:1rem;position:sticky;top:0}
+  header{background:#3a5a40;color:#fff;padding:1rem;position:sticky;top:0;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
   header h1{margin:0;font-size:1.3rem}
+  header button{background:#a3b18a;color:#1c2b1f;border:none;border-radius:6px;padding:.5rem .9rem;font-size:.85rem;cursor:pointer;font-weight:600}
+  header button:hover{background:#b5c99a}
   .layout{display:flex;min-height:80vh}
   nav{width:240px;background:#344e41;color:#fff;padding:1rem;flex-shrink:0}
   nav ul{list-style:none;padding:0;margin:0}
@@ -96,7 +111,10 @@ function build() {
 </style>
 </head>
 <body>
-<header><h1>🛡️ Wiki Preparacionismo</h1></header>
+<header>
+  <h1>🛡️ Wiki Preparacionismo</h1>
+  <button onclick="exportZip()">⬇️ Exportar web (ZIP)</button>
+</header>
 <div class="layout">
   <nav>
     <input id="search" placeholder="Buscar..." onkeyup="filter()">
@@ -104,12 +122,41 @@ function build() {
   </nav>
   <main>${entries}</main>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script>
 function filter(){
   const q=document.getElementById('search').value.toLowerCase();
   document.querySelectorAll('.tiddler').forEach(s=>{
     s.style.display=s.innerText.toLowerCase().includes(q)?'':'none';
   });
+}
+async function exportZip(){
+  if(typeof JSZip==='undefined'){alert('Cargando librería ZIP, inténtalo en unos segundos...');return;}
+  const btn=document.querySelector('header button');
+  const old=btn.textContent; btn.textContent='⏳ Generando...'; btn.disabled=true;
+  try{
+    const zip=new JSZip();
+    zip.file('index.html', document.documentElement.outerHTML);
+    const dirs=['img','video','pdf'];
+    for(const d of dirs){
+      // buscar rutas relativas referenciadas en el HTML
+      const re=new RegExp(d+'/[^"\\\\\\'\\\\s)]+','g');
+      const found=new Set([...document.documentElement.outerHTML.matchAll(re)].map(m=>m[0]));
+      for(const rel of found){
+        try{
+          const r=await fetch(rel);
+          if(r.ok){ const buf=await r.arrayBuffer(); zip.file(rel, buf); }
+        }catch(e){ console.warn('No se pudo añadir',rel,e); }
+      }
+    }
+    const blob=await zip.generateAsync({type:'blob'});
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download='wiki-preparacionismo.zip';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }catch(e){ alert('Error: '+e.message); }
+  finally{ btn.textContent=old; btn.disabled=false; }
 }
 </script>
 </body>
