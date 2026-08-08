@@ -80,15 +80,16 @@ function build() {
   const home = tiddlers.find(t => (t.meta.tags || '').split(' ').includes('Portada')) || tiddlers[0];
   const homeId = encodeURIComponent(home.meta.title);
 
-  // Agrupar artículos por categoría (primera etiqueta conocida)
+  // Agrupar artículos por categoría (todas las etiquetas que sean categorías base)
   const groups = {};
   CATEGORIES.forEach(c => groups[c] = []);
   groups['Otros'] = [];
   const articles = tiddlers.filter(t => t !== home);
   for (const t of articles) {
     const tags = (t.meta.tags || '').split(' ').filter(Boolean);
-    const cat = tags.find(tg => CATEGORIES.includes(tg)) || 'Otros';
-    groups[cat].push(t);
+    const cats = tags.filter(tg => CATEGORIES.includes(tg));
+    if (cats.length === 0) groups['Otros'].push(t);
+    else cats.forEach(c => groups[c].push(t));
   }
 
   // Secciones de artículos
