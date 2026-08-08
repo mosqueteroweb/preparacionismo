@@ -12,6 +12,7 @@ Los contenidos se organizan por escenarios y temas transversales:
 * <a href="#" onclick="show('cat-Fuego')">🔥 Fuego</a>
 * <a href="#" onclick="show('cat-Nevadas')">❄️ Nevadas</a>
 * <a href="#" onclick="show('cat-Virus/Confinamiento')">🦠 Virus / Confinamiento</a>
+* <a href="#" onclick="show('cat-Apag%C3%B3n')">🔌 Apagón</a>
 * <a href="#" onclick="show('cat-Agua')">💧 Agua</a>
 * <a href="#" onclick="show('cat-Alimentación')">🥫 Alimentación</a>
 * <a href="#" onclick="show('cat-Salud')">⚕️ Salud</a>
