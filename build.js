@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* build.js — ensambla index.html a partir de los .tid en tiddlers/
-   Motor mínimo (render básico de texto/wiki) + exportar ZIP offline.
+   Motor mínimo con navegación por categorías + vista tipo wiki.
    Dependencias: ninguna (Node built-in). */
 const fs = require('fs');
 const path = require('path');
@@ -9,6 +9,9 @@ const { execSync } = require('child_process');
 const ROOT = __dirname;
 const TID_DIR = path.join(ROOT, 'tiddlers');
 const OUT = path.join(ROOT, 'index.html');
+
+// Categorías base (orden de menú). Se añade "Otros" si un artículo no encaja.
+const CATEGORIES = ['Agua', 'Alimentación', 'Refugio', 'Salud', 'Comunicaciones', 'Herramientas', 'Legislación'];
 
 function parseTid(raw) {
   const lines = raw.split('\n');
@@ -24,7 +27,6 @@ function parseTid(raw) {
   return { meta, body };
 }
 
-// Conversión wiki mínima
 function wiki2html(body) {
   let h = body
     .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '<a href="$2" target="_blank">$1</a>')
@@ -35,31 +37,18 @@ function wiki2html(body) {
   let out = '', inList = false;
   for (let line of blocks) {
     if (line.startsWith('! ')) { if(inList){out+='</ul>';inList=false;} out += `<h1>${line.slice(2)}</h1>`; }
-    else if (line.startsWith('* ')) { if(!inList){out+='<ul>';inList=true;} out += `<li>${line.slice(2)}</li>`; }
-    else { if(inList){out+='</ul>';inList=false;} if(line.trim()) out += `<p>${line}</p>`; }
+    else if (line.startsWith('!! ')) { if(inList){out+='</ul>';inList=false;} out += `<h2>${line.slice(3)}</h2>`; }
+    else if (line.startsWith('# ')) { if(!inList){out+='<ol>';inList='ol';} out += `<li>${line.slice(2)}</li>`; }
+    else if (line.startsWith('* ')) { if(!inList){out+='<ul>';inList='ul';} out += `<li>${line.slice(2)}</li>`; }
+    else { if(inList){out+=`</${inList}>`;inList=false;} if(line.trim()) out += `<p>${line}</p>`; }
   }
-  if (inList) out += '</ul>';
+  if (inList) out += `</${inList}>`;
   return out;
 }
 
 function extractRawHtml(body) {
   const m = body.match(/<html>([\s\S]*?)<\/html>/);
   return m ? m[1] : '';
-}
-
-// Recolecta todos los archivos de media (img/, video/, pdf/) que existan
-function collectMediaDirs() {
-  const dirs = ['img', 'video', 'pdf'];
-  const files = []; // {rel, abs}
-  for (const d of dirs) {
-    const abs = path.join(ROOT, d);
-    if (!fs.existsSync(abs)) continue;
-    for (const f of fs.readdirSync(abs)) {
-      const fabs = path.join(abs, f);
-      if (fs.statSync(fabs).isFile()) files.push({ rel: `${d}/${f}`, abs: fabs });
-    }
-  }
-  return files;
 }
 
 function build() {
@@ -69,22 +58,53 @@ function build() {
     return parseTid(raw);
   });
 
+  // Página de inicio = tiddler con tag "Portada" (si no, el primero)
+  const home = tiddlers.find(t => (t.meta.tags || '').split(' ').includes('Portada')) || tiddlers[0];
+  const homeId = encodeURIComponent(home.meta.title);
+
+  // Agrupar artículos por categoría (primera etiqueta conocida)
+  const groups = {};
+  CATEGORIES.forEach(c => groups[c] = []);
+  groups['Otros'] = [];
+  const articles = tiddlers.filter(t => t !== home);
+  for (const t of articles) {
+    const tags = (t.meta.tags || '').split(' ').filter(Boolean);
+    const cat = tags.find(tg => CATEGORIES.includes(tg)) || 'Otros';
+    groups[cat].push(t);
+  }
+
+  // Secciones de artículos
   const entries = tiddlers.map(t => {
     const title = t.meta.title || 'Sin título';
+    const id = encodeURIComponent(title);
     const tags = (t.meta.tags || '').split(' ').filter(Boolean);
     const tagHtml = tags.map(tg => `<span class="tag">${tg}</span>`).join(' ');
     const htmlBody = wiki2html(t.body).replace(/<html>[\s\S]*?<\/html>/g, '');
     const rawHtml = extractRawHtml(t.body);
     return `
-<section class="tiddler" id="${encodeURIComponent(title)}">
+<section class="view tiddler" id="${id}">
   <h2>${title}</h2>
   <div class="tags">${tagHtml}</div>
   <div class="body">${htmlBody}${rawHtml}</div>
 </section>`;
   }).join('\n');
 
-  const titles = tiddlers.map(t => t.meta.title).filter(Boolean);
-  const nav = titles.map(t => `<li><a href="#${encodeURIComponent(t)}">${t}</a></li>`).join('\n');
+  // Secciones de categoría (páginas con enlaces a sus artículos)
+  const catSections = CATEGORIES.concat(['Otros']).filter(c => groups[c].length).map(c => {
+    const links = groups[c].map(t =>
+      `<li><a href="#" onclick="show('${encodeURIComponent(t.meta.title)}')">${t.meta.title}</a></li>`).join('\n');
+    const cid = 'cat-' + encodeURIComponent(c);
+    return `<section class="view" id="${cid}">
+  <h2>📂 ${c}</h2>
+  <p class="catdesc">Artículos en la categoría <b>${c}</b>:</p>
+  <ul class="catlist">${links}</ul>
+</section>`;
+  }).join('\n');
+
+  // Menú: Inicio + categorías
+  const navCats = CATEGORIES.concat(['Otros']).filter(c => groups[c].length)
+    .map(c => `<li><a href="#" onclick="show('cat-${encodeURIComponent(c)}')">${c}</a></li>`).join('\n');
+  const nav = `<li><a href="#" onclick="show('${homeId}')"><b>🏠 Inicio</b></a></li>\n${navCats}`;
 
   const html = `<!doctype html>
 <html lang="es">
@@ -103,10 +123,14 @@ function build() {
   nav ul{list-style:none;padding:0;margin:0}
   nav a{color:#dad7cd;text-decoration:none;display:block;padding:.4rem 0}
   nav a:hover{color:#fff}
-  main{flex:1;padding:1.5rem;max-width:800px}
+  main{flex:1;padding:1.5rem;max-width:820px}
+  .view{display:none}
   .tiddler{border-bottom:1px solid #ccc;padding:1rem 0}
   .tags .tag{background:#a3b18a;color:#1c2b1f;border-radius:4px;padding:.1rem .5rem;font-size:.75rem;margin-right:.3rem}
   .body img{max-width:100%}
+  .catlist li{margin:.3rem 0}
+  .catlist a{color:#344e41;font-weight:600}
+  .catdesc{color:#555}
   input#search{width:100%;padding:.5rem;margin-bottom:1rem;border-radius:6px;border:1px solid #ccc}
   @media(max-width:600px){.layout{flex-direction:column}nav{width:100%}}
 </style>
@@ -121,20 +145,39 @@ function build() {
     <input id="search" placeholder="Buscar..." onkeyup="filter()">
     <ul id="navlist">${nav}</ul>
   </nav>
-  <main>${entries}</main>
+  <main>
+${entries}
+${catSections}
+  </main>
 </div>
 <script>
-function filter(){
-  const q=document.getElementById('search').value.toLowerCase();
-  document.querySelectorAll('.tiddler').forEach(s=>{
-    s.style.display=s.innerText.toLowerCase().includes(q)?'':'none';
-  });
+function show(id){
+  document.querySelectorAll('.view').forEach(s=>s.style.display='none');
+  const el=document.getElementById(id);
+  if(el){ el.style.display='block'; window.scrollTo(0,0); }
 }
+function filter(){
+  const q=document.getElementById('search').value.toLowerCase().trim();
+  if(!q){ show('${homeId}'); return; }
+  document.querySelectorAll('.view').forEach(s=>s.style.display='none');
+  let any=false;
+  document.querySelectorAll('.tiddler').forEach(s=>{
+    if(s.innerText.toLowerCase().includes(q)){ s.style.display='block'; any=true; }
+  });
+  if(!any){ const m=document.createElement('div'); }
+  window.scrollTo(0,0);
+}
+// Al cargar: deep-link por hash si existe, si no -> Inicio
+window.addEventListener('DOMContentLoaded',()=>{
+  const h=location.hash.slice(1);
+  if(h && document.getElementById(h)) show(h);
+  else show('${homeId}');
+});
 </script>
 </body>
 </html>`;
   fs.writeFileSync(OUT, html);
-  console.log('Generado index.html con', tiddlers.length, 'articulo(s)');
+  console.log('Generado index.html con', tiddlers.length, 'articulo(s) y', CATEGORIES.length, 'categorias base');
 
   // Generar wikiprep.zip (index.html + carpetas media) para uso offline por file://
   try {
