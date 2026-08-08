@@ -1,2 +1,36 @@
 node_modules/
 .DS_Store
+
+# === Seguridad: nunca subir credenciales/secretos al repo público ===
+# Claves SSH
+**/.ssh/**
+**/id_rsa
+**/id_ed25519
+**/id_dsa
+**/id_ecdsa
+**/*.pem
+**/*.key
+**/known_hosts
+
+# Tokens / secretos
+**/*.env
+**/.env
+**/.env.*
+**/.envrc
+**/token*
+**/*token*
+**/.git-credentials
+**/credentials
+
+# Config de gh (keyring/local)
+**/.config/gh/**
+**/gh/hosts.yml
+**/gh/config.yml
+
+# Cualquier archivo que empiece por estas cadenas
+**/github_pat_*
+**/ghp_*
+**/gho_*
+**/ghu_*
+**/ghs_*
+**/ghr_*
