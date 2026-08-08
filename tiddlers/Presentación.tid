@@ -4,17 +4,21 @@ type: text/vnd.tiddlywiki
 
 ! Bienvenido a la Wiki de Preparacionismo
 
-Esta es una recopilación de recursos, técnicas y materiales para la [[preparación|https://es.wikipedia.org/wiki/Supervivencia]] y la resiliencia personal y familiar.
+Esta es una recopilación de recursos, técnicas y materiales para la [[preparación|https://es.wikipedia.org/wiki/Supervivencia]] ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
 
-Los contenidos se organizan por categorías:
+Los contenidos se organizan por escenarios y temas transversales:
 
+* <a href="#" onclick="show('cat-Inundación')">🌊 Inundación</a>
+* <a href="#" onclick="show('cat-Fuego')">🔥 Fuego</a>
+* <a href="#" onclick="show('cat-Nevadas')">❄️ Nevadas</a>
+* <a href="#" onclick="show('cat-Virus/Confinamiento')">🦠 Virus / Confinamiento</a>
 * <a href="#" onclick="show('cat-Agua')">💧 Agua</a>
-* <a href="#" onclick="show('cat-Alimentación')">🥕 Alimentación</a>
-* <a href="#" onclick="show('cat-Refugio')">⛺ Refugio</a>
+* <a href="#" onclick="show('cat-Alimentación')">🥫 Alimentación</a>
 * <a href="#" onclick="show('cat-Salud')">⚕️ Salud</a>
 * <a href="#" onclick="show('cat-Comunicaciones')">📡 Comunicaciones</a>
+* <a href="#" onclick="show('cat-Documentación')">📄 Documentación</a>
+* <a href="#" onclick="show('cat-Energía/luz')">🔦 Energía / luz</a>
 * <a href="#" onclick="show('cat-Herramientas')">🛠️ Herramientas</a>
-* <a href="#" onclick="show('cat-Legislación')">⚖️ Legislación</a>
 
 Cada artículo puede incluir texto, imágenes y vídeos almacenados localmente. Usa el buscador o las etiquetas para navegar.
 
