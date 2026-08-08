@@ -18,6 +18,7 @@ Los contenidos se organizan por escenarios y temas transversales:
 * <a href="#" onclick="show('cat-Comunicaciones')">📡 Comunicaciones</a>
 * <a href="#" onclick="show('cat-Energía/luz')">🔦 Energía / luz</a>
 * <a href="#" onclick="show('cat-Herramientas')">🛠️ Herramientas</a>
+* <a href="#" onclick="show('cat-Otros')">📦 Otros</a>
 
 (Categoría sin contenido aún: ❄️ Nevadas. Aparecerá al añadir el primer artículo.)
 
