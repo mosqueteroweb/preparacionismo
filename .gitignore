@@ -34,3 +34,7 @@ node_modules/
 **/ghu_*
 **/ghs_*
 **/ghr_*
+
+# === El ZIP de exportación NO se versiona (ahorra espacio en GitHub) ===
+# Se genera en el navegador del usuario al pulsar "Exportar" (JSZip).
+**/wikiprep.zip

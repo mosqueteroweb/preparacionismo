@@ -4,7 +4,7 @@
    Dependencias: ninguna (Node built-in). */
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+
 
 const ROOT = __dirname;
 const TID_DIR = path.join(ROOT, 'tiddlers');
@@ -149,7 +149,7 @@ function build() {
 <body>
 <header>
   <h1>🛡️ Wiki Preparacionismo</h1>
-  <button onclick="location.href='wikiprep.zip'">⬇️ Exportar web (ZIP)</button>
+  <button onclick="exportZip()">⬇️ Exportar web (ZIP)</button>
 </header>
 <div class="layout">
   <nav>
@@ -161,6 +161,7 @@ ${entries}
 ${catSections}
   </main>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script>
 function show(id){
   document.querySelectorAll('.view').forEach(s=>s.style.display='none');
@@ -171,11 +172,9 @@ function filter(){
   const q=document.getElementById('search').value.toLowerCase().trim();
   if(!q){ show('${homeId}'); return; }
   document.querySelectorAll('.view').forEach(s=>s.style.display='none');
-  let any=false;
   document.querySelectorAll('.tiddler').forEach(s=>{
-    if(s.innerText.toLowerCase().includes(q)){ s.style.display='block'; any=true; }
+    if(s.innerText.toLowerCase().includes(q)){ s.style.display='block'; }
   });
-  if(!any){ const m=document.createElement('div'); }
   window.scrollTo(0,0);
 }
 // Al cargar: deep-link por hash si existe, si no -> Inicio
@@ -184,23 +183,38 @@ window.addEventListener('DOMContentLoaded',()=>{
   if(h && document.getElementById(h)) show(h);
   else show('${homeId}');
 });
+// Genera el ZIP en el navegador (index.html + media local) para uso offline por file://
+async function exportZip(){
+  if(typeof JSZip==='undefined'){ alert('Cargando librería ZIP, inténtalo en unos segundos...'); return; }
+  const btn=document.querySelector('header button');
+  const old=btn.textContent; btn.textContent='⏳ Generando...'; btn.disabled=true;
+  try{
+    const zip=new JSZip();
+    zip.file('index.html', document.documentElement.outerHTML);
+    const dirs=['img','video','pdf'];
+    for(const d of dirs){
+      const re=new RegExp(d+'/[^"\\\\\\'\\\\s)]+','g');
+      const found=new Set([...document.documentElement.outerHTML.matchAll(re)].map(m=>m[0]));
+      for(const rel of found){
+        try{
+          const r=await fetch(rel);
+          if(r.ok){ const buf=await r.arrayBuffer(); zip.file(rel, buf); }
+        }catch(e){ console.warn('No se pudo añadir',rel,e); }
+      }
+    }
+    const blob=await zip.generateAsync({type:'blob'});
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download='wikiprep.zip';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }catch(e){ alert('Error: '+e.message); }
+  finally{ btn.textContent=old; btn.disabled=false; }
+}
 </script>
 </body>
 </html>`;
   fs.writeFileSync(OUT, html);
   console.log('Generado index.html con', tiddlers.length, 'articulo(s) y', CATEGORIES.length, 'categorias base');
-
-  // Generar wikiprep.zip (index.html + carpetas media) para uso offline por file://
-  try {
-    const zipName = 'wikiprep.zip';
-    const include = ['index.html', 'img', 'video', 'pdf', 'README.md']
-      .filter(p => fs.existsSync(path.join(ROOT, p)));
-    const srcList = include.map(p => `"${p}"`).join(' ');
-    execSync(`cd "${ROOT}" && zip -r -q "${zipName}" ${srcList} -x "*.git*" "node_modules/*"`, { stdio: 'pipe' });
-    const sz = (fs.statSync(path.join(ROOT, zipName)).size / 1024 / 1024).toFixed(2);
-    console.log(`Generado ${zipName} (${sz} MB) con: ${include.join(', ')}`);
-  } catch (e) {
-    console.warn('No se pudo generar el ZIP (¿falta el comando zip?):', e.message);
-  }
 }
 build();
