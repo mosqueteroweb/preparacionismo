@@ -8,13 +8,13 @@ Esta es una recopilación de recursos, técnicas y materiales para la [[preparac
 
 Los contenidos se organizan por categorías:
 
-* [[Agua]]
-* [[Alimentación]]
-* [[Refugio]]
-* [[Salud]]
-* [[Comunicaciones]]
-* [[Herramientas]]
-* [[Legislación]]
+* <a href="#" onclick="show('cat-Agua')">💧 Agua</a>
+* <a href="#" onclick="show('cat-Alimentación')">🥕 Alimentación</a>
+* <a href="#" onclick="show('cat-Refugio')">⛺ Refugio</a>
+* <a href="#" onclick="show('cat-Salud')">⚕️ Salud</a>
+* <a href="#" onclick="show('cat-Comunicaciones')">📡 Comunicaciones</a>
+* <a href="#" onclick="show('cat-Herramientas')">🛠️ Herramientas</a>
+* <a href="#" onclick="show('cat-Legislación')">⚖️ Legislación</a>
 
 Cada artículo puede incluir texto, imágenes y vídeos almacenados localmente. Usa el buscador o las etiquetas para navegar.
 
