@@ -1,0 +1,27 @@
+title: Manual PMR walkies (Aliexpress)
+tags: Comunicaciones Manuales PMR
+type: text/vnd.tiddlywiki
+
+! Manual de walkie-talkie PMR (Aliexpress, b/n)
+
+Manual de usuario de un transceptor PMR portátil (walkie-talkie de mano, versión blanco y negro adquirida en Aliexpress). Documento de 4 páginas en inglés, escaneado.
+
+'''Descargar:''' [[Manual_PMR_walkies.pdf|pdf/Manual_PMR_walkies.pdf]] (1,5 MB)
+
+!! Resumen del contenido
+
+'''Página 1 — Getting Started'''
+* Diagrama de componentes: antena, tecla PTT (transmisión), tecla ON/OFF, CH/VOL+ y CH/VOL− (canal/volumen), entrada de micrófono (MIC jack), interfaz de auricular y programación, puerto de carga TYPE-C y altavoz.
+* Accesorios estándar: cable USB (1), adaptador (1), clip para cinturón (1) y correa de mano (1).
+
+'''Páginas 2-4 — One-click Frequency and Code Decryption'''
+Función de descifrado de frecuencia y código con un solo clic, para sincronizar con la mayoría de walkie-talkies analógicos del mercado. Distingue dos modos:
+
+* '''Modo de descifrado ordinario:'''
+  # Con el equipo apagado, mantener pulsadas PTT + ON/OFF hasta oír tres pitidos "dididi" y ver parpadear alternamente los indicadores rojo/verde → entra en "Etapa 1 de medición de frecuencia".
+  # Cambiar de canal con el interruptor de codificación → "Etapa 2".
+  # Transmitir continuamente con el walkie objetivo; al oír "da" con dos destellos rojos, la frecuencia queda guardada en el canal actual y ya pueden hablar.
+* '''Modo de descifrado súper:''' igual pero pulsando PTT + MONI (▲) + ON/OFF. Tarda más; reintentar si falla la primera vez.
+* '''Tono final "croak":''' se activa/desactiva (sonidos "di" / "didi") manteniendo ▲ + ON/OFF al encender.
+
+'''Aplicación en preparacionismo:''' equipo de comunicaciones de corto/medio alcance, carga por USB-C, y útil por su capacidad de clonar frecuencias de otros equipos analógicos sin software.
