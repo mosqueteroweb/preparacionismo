@@ -124,8 +124,6 @@ function build() {
   const navCats = CATEGORIES.concat(['Otros']).filter(c => groups[c].length)
     .map(c => `<li><a href="#" data-cat="${c}" onclick="show('cat-${encodeURIComponent(c)}')">${CAT_ICON[c]||''} ${c}</a></li>`).join('\n');
   const nav = `<li><a href="#" onclick="show('${homeId}')"><b>🏠 Inicio</b></a></li>\n${navCats}`;
-  const pillsHtml = CATEGORIES.concat(['Otros']).filter(c => groups[c].length)
-    .map(c => `<div class="pill" data-cat="${c}" onclick="show('cat-${encodeURIComponent(c)}')">${CAT_ICON[c]||''} ${c}</div>`).join('\n');
 
   const html = `<!doctype html>
 <html lang="es">
@@ -142,10 +140,6 @@ function build() {
   .brand{font-size:1.6rem;font-weight:700;letter-spacing:.5px}
   .brand span{color:var(--accent)}
   .actions button{background:var(--accent);color:#fff;border:none;border-radius:20px;padding:.5rem 1rem;font-size:.8rem;cursor:pointer;font-family:system-ui,sans-serif;margin-left:.4rem}
-  .pills{display:flex;gap:.6rem;flex-wrap:wrap;width:100%;max-width:100%}
-  .pill{font-family:system-ui,sans-serif;font-size:.82rem;background:#fff;border:1px solid var(--line);color:var(--ink);padding:.4rem .9rem;border-radius:20px;cursor:pointer;max-width:100%;white-space:normal;flex:0 0 auto}
-  .pill.active{background:var(--accent);color:#fff;border-color:var(--accent)}
-  .pill.active:hover{background:var(--accent)}
   .layout{display:flex;min-height:84vh}
   nav{width:230px;padding:1.6rem 1.4rem;border-right:1px solid var(--line);flex-shrink:0}
   nav .search{width:100%;padding:.55rem .8rem;border:1px solid var(--line);border-radius:20px;background:#fff;margin-bottom:1.4rem;font-family:system-ui,sans-serif;font-size:.85rem;color:var(--muted)}
@@ -171,8 +165,6 @@ function build() {
     main{padding:1.3rem}
     .brand{font-size:1.25rem}
     header{overflow-x:hidden;padding:1rem}
-    .pills{gap:.4rem}
-    .pill{font-size:.78rem;padding:.35rem .7rem}
   }
 </style>
 </head>
@@ -182,7 +174,6 @@ function build() {
     <div class="brand">Wiki <span>Preparacionismo</span></div>
     <div class="actions"><button onclick="goBack()" title="Volver atrás">⬅️ Atrás</button><button onclick="exportZip()">⬇️ Exportar web (ZIP)</button></div>
   </div>
-  <div class="pills" id="pills">${pillsHtml}</div>
 </header>
 <div class="layout">
   <nav>
@@ -209,10 +200,6 @@ function activeCatFor(id){
 }
 function highlightCat(cat){
   document.querySelectorAll('#navlist a[data-cat]').forEach(a=>{
-    if(cat && a.getAttribute('data-cat')===cat) a.classList.add('active');
-    else a.classList.remove('active');
-  });
-  document.querySelectorAll('#pills .pill[data-cat]').forEach(a=>{
     if(cat && a.getAttribute('data-cat')===cat) a.classList.add('active');
     else a.classList.remove('active');
   });
