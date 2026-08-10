@@ -16,6 +16,7 @@
   .pills{display:flex;gap:.6rem;flex-wrap:wrap;width:100%;max-width:100%}
   .pill{font-family:system-ui,sans-serif;font-size:.82rem;background:#fff;border:1px solid var(--line);color:var(--ink);padding:.4rem .9rem;border-radius:20px;cursor:pointer;max-width:100%;white-space:normal;flex:0 0 auto}
   .pill.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .pill.active:hover{background:var(--accent)}
   .layout{display:flex;min-height:84vh}
   nav{width:230px;padding:1.6rem 1.4rem;border-right:1px solid var(--line);flex-shrink:0}
   nav .search{width:100%;padding:.55rem .8rem;border:1px solid var(--line);border-radius:20px;background:#fff;margin-bottom:1.4rem;font-family:system-ui,sans-serif;font-size:.85rem;color:var(--muted)}
@@ -52,33 +53,33 @@
     <div class="brand">Wiki <span>Preparacionismo</span></div>
     <div class="actions"><button onclick="goBack()" title="Volver atrás">⬅️ Atrás</button><button onclick="exportZip()">⬇️ Exportar web (ZIP)</button></div>
   </div>
-  <div class="pills" id="pills"><div class="pill" onclick="show('cat-Inundaci%C3%B3n')">🌊 Inundación</div>
-<div class="pill" onclick="show('cat-Fuego')">🔥 Fuego</div>
-<div class="pill" onclick="show('cat-Nevadas')">❄️ Nevadas</div>
-<div class="pill" onclick="show('cat-Virus%2FConfinamiento')">🦠 Virus/Confinamiento</div>
-<div class="pill" onclick="show('cat-Apag%C3%B3n')">🔌 Apagón</div>
-<div class="pill" onclick="show('cat-Agua')">💧 Agua</div>
-<div class="pill" onclick="show('cat-Alimentaci%C3%B3n')">🥫 Alimentación</div>
-<div class="pill" onclick="show('cat-Salud')">⚕️ Salud</div>
-<div class="pill" onclick="show('cat-Comunicaciones')">📡 Comunicaciones</div>
-<div class="pill" onclick="show('cat-Energ%C3%ADa%2Fluz')">🔦 Energía/luz</div>
-<div class="pill" onclick="show('cat-Herramientas')">🛠️ Herramientas</div></div>
+  <div class="pills" id="pills"><div class="pill" data-cat="Inundación" onclick="show('cat-Inundaci%C3%B3n')">🌊 Inundación</div>
+<div class="pill" data-cat="Fuego" onclick="show('cat-Fuego')">🔥 Fuego</div>
+<div class="pill" data-cat="Nevadas" onclick="show('cat-Nevadas')">❄️ Nevadas</div>
+<div class="pill" data-cat="Virus/Confinamiento" onclick="show('cat-Virus%2FConfinamiento')">🦠 Virus/Confinamiento</div>
+<div class="pill" data-cat="Apagón" onclick="show('cat-Apag%C3%B3n')">🔌 Apagón</div>
+<div class="pill" data-cat="Agua" onclick="show('cat-Agua')">💧 Agua</div>
+<div class="pill" data-cat="Alimentación" onclick="show('cat-Alimentaci%C3%B3n')">🥫 Alimentación</div>
+<div class="pill" data-cat="Salud" onclick="show('cat-Salud')">⚕️ Salud</div>
+<div class="pill" data-cat="Comunicaciones" onclick="show('cat-Comunicaciones')">📡 Comunicaciones</div>
+<div class="pill" data-cat="Energía/luz" onclick="show('cat-Energ%C3%ADa%2Fluz')">🔦 Energía/luz</div>
+<div class="pill" data-cat="Herramientas" onclick="show('cat-Herramientas')">🛠️ Herramientas</div></div>
 </header>
 <div class="layout">
   <nav>
     <input id="search" placeholder="Buscar..." onkeyup="filter()">
     <ul id="navlist"><li><a href="#" onclick="show('Presentaci%C3%B3n')"><b>🏠 Inicio</b></a></li>
-<li><a href="#" onclick="show('cat-Inundaci%C3%B3n')">🌊 Inundación</a></li>
-<li><a href="#" onclick="show('cat-Fuego')">🔥 Fuego</a></li>
-<li><a href="#" onclick="show('cat-Nevadas')">❄️ Nevadas</a></li>
-<li><a href="#" onclick="show('cat-Virus%2FConfinamiento')">🦠 Virus/Confinamiento</a></li>
-<li><a href="#" onclick="show('cat-Apag%C3%B3n')">🔌 Apagón</a></li>
-<li><a href="#" onclick="show('cat-Agua')">💧 Agua</a></li>
-<li><a href="#" onclick="show('cat-Alimentaci%C3%B3n')">🥫 Alimentación</a></li>
-<li><a href="#" onclick="show('cat-Salud')">⚕️ Salud</a></li>
-<li><a href="#" onclick="show('cat-Comunicaciones')">📡 Comunicaciones</a></li>
-<li><a href="#" onclick="show('cat-Energ%C3%ADa%2Fluz')">🔦 Energía/luz</a></li>
-<li><a href="#" onclick="show('cat-Herramientas')">🛠️ Herramientas</a></li></ul>
+<li><a href="#" data-cat="Inundación" onclick="show('cat-Inundaci%C3%B3n')">🌊 Inundación</a></li>
+<li><a href="#" data-cat="Fuego" onclick="show('cat-Fuego')">🔥 Fuego</a></li>
+<li><a href="#" data-cat="Nevadas" onclick="show('cat-Nevadas')">❄️ Nevadas</a></li>
+<li><a href="#" data-cat="Virus/Confinamiento" onclick="show('cat-Virus%2FConfinamiento')">🦠 Virus/Confinamiento</a></li>
+<li><a href="#" data-cat="Apagón" onclick="show('cat-Apag%C3%B3n')">🔌 Apagón</a></li>
+<li><a href="#" data-cat="Agua" onclick="show('cat-Agua')">💧 Agua</a></li>
+<li><a href="#" data-cat="Alimentación" onclick="show('cat-Alimentaci%C3%B3n')">🥫 Alimentación</a></li>
+<li><a href="#" data-cat="Salud" onclick="show('cat-Salud')">⚕️ Salud</a></li>
+<li><a href="#" data-cat="Comunicaciones" onclick="show('cat-Comunicaciones')">📡 Comunicaciones</a></li>
+<li><a href="#" data-cat="Energía/luz" onclick="show('cat-Energ%C3%ADa%2Fluz')">🔦 Energía/luz</a></li>
+<li><a href="#" data-cat="Herramientas" onclick="show('cat-Herramientas')">🛠️ Herramientas</a></li></ul>
   </nav>
   <main>
 
@@ -515,10 +516,30 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script>
 var _history=[];
+const CATS = ["Inundación","Fuego","Nevadas","Virus/Confinamiento","Apagón","Agua","Alimentación","Salud","Comunicaciones","Documentación","Energía/luz","Herramientas"];
+function activeCatFor(id){
+  if(id && id.indexOf('cat-')===0){ return decodeURIComponent(id.slice(4)); }
+  const el=document.getElementById(id);
+  if(el){
+    const tags=[...el.querySelectorAll('.tags .tag')].map(t=>t.textContent.trim());
+    for(const c of CATS){ if(tags.includes(c)) return c; }
+  }
+  return null;
+}
+function highlightCat(cat){
+  document.querySelectorAll('#navlist a[data-cat]').forEach(a=>{
+    if(cat && a.getAttribute('data-cat')===cat) a.classList.add('active');
+    else a.classList.remove('active');
+  });
+  document.querySelectorAll('#pills .pill[data-cat]').forEach(a=>{
+    if(cat && a.getAttribute('data-cat')===cat) a.classList.add('active');
+    else a.classList.remove('active');
+  });
+}
 function show(id){
   document.querySelectorAll('.view').forEach(s=>s.style.display='none');
   const el=document.getElementById(id);
-  if(el){ el.style.display='block'; window.scrollTo(0,0); _history.push(id); }
+  if(el){ el.style.display='block'; window.scrollTo(0,0); _history.push(id); highlightCat(activeCatFor(id)); }
 }
 function goBack(){
   if(_history.length>1){ _history.pop(); const prev=_history.pop(); show(prev); }
@@ -526,12 +547,13 @@ function goBack(){
 }
 function filter(){
   const q=document.getElementById('search').value.toLowerCase().trim();
-  if(!q){ show('Presentaci%C3%B3n'); return; }
+  if(!q){ show('Presentaci%C3%B3n'); highlightCat(null); return; }
   document.querySelectorAll('.view').forEach(s=>s.style.display='none');
   document.querySelectorAll('.tiddler').forEach(s=>{
     if(s.innerText.toLowerCase().includes(q)){ s.style.display='block'; }
   });
   window.scrollTo(0,0);
+  highlightCat(null);
 }
 // Al cargar: deep-link por hash si existe, si no -> Inicio
 window.addEventListener('DOMContentLoaded',()=>{
@@ -549,7 +571,7 @@ async function exportZip(){
     zip.file('index.html', document.documentElement.outerHTML);
     const dirs=['img','video','pdf'];
     for(const d of dirs){
-      const re=new RegExp(d+'/[^"\\\'\\s)]+','g');
+      const re=new RegExp(d+'/[^"\x27\s)]+','g');
       const found=new Set([...document.documentElement.outerHTML.matchAll(re)].map(m=>m[0]));
       for(const rel of found){
         try{
