@@ -189,12 +189,13 @@ ${catSections}
 <script>
 var _history=[];
 const CATS = ${JSON.stringify(CATEGORIES)};
+function norm(s){ return (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim(); }
 function activeCatFor(id){
   if(id && id.indexOf('cat-')===0){ return decodeURIComponent(id.slice(4)); }
   const el=document.getElementById(id);
   if(el){
-    const tags=[...el.querySelectorAll('.tags .tag')].map(t=>t.textContent.trim());
-    for(const c of CATS){ if(tags.includes(c)) return c; }
+    const tags=[...el.querySelectorAll('.tags .tag')].map(t=>norm(t.textContent));
+    for(const c of CATS){ if(tags.includes(norm(c))) return c; }
   }
   return null;
 }

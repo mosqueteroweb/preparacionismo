@@ -500,12 +500,13 @@
 <script>
 var _history=[];
 const CATS = ["Inundación","Fuego","Nevadas","Virus/Confinamiento","Apagón","Agua","Alimentación","Salud","Comunicaciones","Documentación","Energía/luz","Herramientas"];
+function norm(s){ return (s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().trim(); }
 function activeCatFor(id){
   if(id && id.indexOf('cat-')===0){ return decodeURIComponent(id.slice(4)); }
   const el=document.getElementById(id);
   if(el){
-    const tags=[...el.querySelectorAll('.tags .tag')].map(t=>t.textContent.trim());
-    for(const c of CATS){ if(tags.includes(c)) return c; }
+    const tags=[...el.querySelectorAll('.tags .tag')].map(t=>norm(t.textContent));
+    for(const c of CATS){ if(tags.includes(norm(c))) return c; }
   }
   return null;
 }
