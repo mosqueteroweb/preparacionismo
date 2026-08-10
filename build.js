@@ -101,7 +101,7 @@ function build() {
     const htmlBody = wiki2html(t.body).replace(/<html>[\s\S]*?<\/html>/g, '');
     const rawHtml = extractRawHtml(t.body);
     return `
-<section class="view tiddler" id="${id}">
+<section class="view card tiddler" id="${id}">
   <h2>${title}</h2>
   <div class="tags">${tagHtml}</div>
   <div class="body">${htmlBody}${rawHtml}</div>
@@ -124,6 +124,8 @@ function build() {
   const navCats = CATEGORIES.concat(['Otros']).filter(c => groups[c].length)
     .map(c => `<li><a href="#" onclick="show('cat-${encodeURIComponent(c)}')">${CAT_ICON[c]||''} ${c}</a></li>`).join('\n');
   const nav = `<li><a href="#" onclick="show('${homeId}')"><b>🏠 Inicio</b></a></li>\n${navCats}`;
+  const pillsHtml = CATEGORIES.concat(['Otros']).filter(c => groups[c].length)
+    .map(c => `<div class="pill" onclick="show('cat-${encodeURIComponent(c)}')">${CAT_ICON[c]||''} ${c}</div>`).join('\n');
 
   const html = `<!doctype html>
 <html lang="es">
@@ -132,33 +134,54 @@ function build() {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wiki Preparacionismo</title>
 <style>
-  body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#f4f1ea;color:#222}
-  header{background:#3a5a40;color:#fff;padding:1rem;position:sticky;top:0;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
-  header h1{margin:0;font-size:1.3rem}
-  header button{background:#a3b18a;color:#1c2b1f;border:none;border-radius:6px;padding:.5rem .9rem;font-size:.85rem;cursor:pointer;font-weight:600}
-  header button:hover{background:#b5c99a}
-  .layout{display:flex;min-height:80vh}
-  nav{width:240px;background:#344e41;color:#fff;padding:1rem;flex-shrink:0}
+  :root{ --bg:#faf6f0; --ink:#3a332b; --muted:#8a7d6d; --accent:#c9744e; --card:#fffdf9; --line:#ece2d4; }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Iowan Old Style',Palatino,Georgia,serif;background:var(--bg);color:var(--ink)}
+  header{background:var(--bg);border-bottom:2px solid var(--ink);padding:1.3rem 2rem 1.1rem;display:flex;flex-direction:column;gap:.9rem}
+  .topbar{display:flex;align-items:center;justify-content:space-between}
+  .brand{font-size:1.6rem;font-weight:700;letter-spacing:.5px}
+  .brand span{color:var(--accent)}
+  .actions button{background:var(--accent);color:#fff;border:none;border-radius:20px;padding:.5rem 1rem;font-size:.8rem;cursor:pointer;font-family:system-ui,sans-serif;margin-left:.4rem}
+  .pills{display:flex;gap:.6rem;flex-wrap:wrap;width:100%;max-width:100%}
+  .pill{font-family:system-ui,sans-serif;font-size:.82rem;background:#fff;border:1px solid var(--line);color:var(--ink);padding:.4rem .9rem;border-radius:20px;cursor:pointer;max-width:100%;white-space:normal;flex:0 0 auto}
+  .pill.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .layout{display:flex;min-height:84vh}
+  nav{width:230px;padding:1.6rem 1.4rem;border-right:1px solid var(--line);flex-shrink:0}
+  nav .search{width:100%;padding:.55rem .8rem;border:1px solid var(--line);border-radius:20px;background:#fff;margin-bottom:1.4rem;font-family:system-ui,sans-serif;font-size:.85rem;color:var(--muted)}
   nav ul{list-style:none;padding:0;margin:0}
-  nav a{color:#dad7cd;text-decoration:none;display:block;padding:.4rem 0}
-  nav a:hover{color:#fff}
-  main{flex:1;padding:1.5rem;max-width:820px}
-  .view{display:none}
-  .tiddler{border-bottom:1px solid #ccc;padding:1rem 0}
-  .tags .tag{background:#a3b18a;color:#1c2b1f;border-radius:4px;padding:.1rem .5rem;font-size:.75rem;margin-right:.3rem}
-  .body img{max-width:100%}
+  nav a{color:var(--muted);text-decoration:none;display:block;padding:.45rem .3rem;font-family:system-ui,sans-serif;font-size:.9rem;border-bottom:1px dotted var(--line)}
+  nav a:hover{color:var(--accent)}
+  main{flex:1;padding:2rem 2.6rem;max-width:840px}
+  .lead{font-size:1.05rem;color:var(--ink);font-style:italic;margin-bottom:1.5rem}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1.7rem 2rem;margin-bottom:1.6rem;box-shadow:0 1px 0 var(--line)}
+  .card h2{font-family:'Iowan Old Style',Palatino,Georgia,serif;font-size:1.5rem;margin:.2rem 0 .7rem}
+  .tag{font-family:system-ui,sans-serif;font-size:.7rem;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-right:.6rem}
+  .card p{color:var(--muted);line-height:1.7;font-size:1rem;margin:.5rem 0;font-family:system-ui,sans-serif}
+  .body img{max-width:100%;border-radius:4px}
+  .body video{max-width:100%;border-radius:4px;margin:.5rem 0;background:#000;display:block}
+  .body iframe{max-width:100%;border:0;border-radius:4px;margin:.5rem 0}
   .catlist li{margin:.3rem 0}
-  .catlist a{color:#344e41;font-weight:600}
-  .catdesc{color:#555}
-  input#search{width:100%;padding:.5rem;margin-bottom:1rem;border-radius:6px;border:1px solid #ccc}
-  @media(max-width:600px){.layout{flex-direction:column}nav{width:100%}}
+  .catlist a{color:var(--accent);font-weight:600;font-family:system-ui,sans-serif}
+  .catdesc{color:var(--muted);font-family:system-ui,sans-serif}
+  .hint{font-family:system-ui,sans-serif;font-size:.8rem;color:var(--muted);margin-top:2rem;border-top:1px dashed var(--line);padding-top:1rem}
+  @media(max-width:600px){
+    .layout{flex-direction:column}
+    nav{width:100%;border-right:none;border-bottom:1px solid var(--line)}
+    main{padding:1.3rem}
+    .brand{font-size:1.25rem}
+    header{overflow-x:hidden;padding:1rem}
+    .pills{gap:.4rem}
+    .pill{font-size:.78rem;padding:.35rem .7rem}
+  }
 </style>
 </head>
 <body>
 <header>
-  <h1>🛡️ Wiki Preparacionismo</h1>
-  <button onclick="goBack()" title="Volver atrás">⬅️ Atrás</button>
-  <button onclick="exportZip()">⬇️ Exportar web (ZIP)</button>
+  <div class="topbar">
+    <div class="brand">Wiki <span>Preparacionismo</span></div>
+    <div class="actions"><button onclick="goBack()" title="Volver atrás">⬅️ Atrás</button><button onclick="exportZip()">⬇️ Exportar web (ZIP)</button></div>
+  </div>
+  <div class="pills" id="pills">${pillsHtml}</div>
 </header>
 <div class="layout">
   <nav>
