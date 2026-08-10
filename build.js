@@ -157,6 +157,7 @@ function build() {
 <body>
 <header>
   <h1>🛡️ Wiki Preparacionismo</h1>
+  <button onclick="goBack()" title="Volver atrás">⬅️ Atrás</button>
   <button onclick="exportZip()">⬇️ Exportar web (ZIP)</button>
 </header>
 <div class="layout">
@@ -171,10 +172,15 @@ ${catSections}
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script>
+var _history=[];
 function show(id){
   document.querySelectorAll('.view').forEach(s=>s.style.display='none');
   const el=document.getElementById(id);
-  if(el){ el.style.display='block'; window.scrollTo(0,0); }
+  if(el){ el.style.display='block'; window.scrollTo(0,0); _history.push(id); }
+}
+function goBack(){
+  if(_history.length>1){ _history.pop(); const prev=_history.pop(); show(prev); }
+  else if(_history.length===1){ /* ya en inicio */ }
 }
 function filter(){
   const q=document.getElementById('search').value.toLowerCase().trim();
