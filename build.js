@@ -122,7 +122,7 @@ function build() {
 
   // Menú: Inicio + categorías
   const navCats = CATEGORIES.concat(['Otros']).filter(c => groups[c].length)
-    .map(c => `<li><a href="#" onclick="show('cat-${encodeURIComponent(c)}')">${CAT_ICON[c]||''} ${c}</a></li>`).join('\n');
+    .map(c => `<li><a href="#" data-cat="${c}" onclick="show('cat-${encodeURIComponent(c)}')">${CAT_ICON[c]||''} ${c}</a></li>`).join('\n');
   const nav = `<li><a href="#" onclick="show('${homeId}')"><b>🏠 Inicio</b></a></li>\n${navCats}`;
   const pillsHtml = CATEGORIES.concat(['Otros']).filter(c => groups[c].length)
     .map(c => `<div class="pill" onclick="show('cat-${encodeURIComponent(c)}')">${CAT_ICON[c]||''} ${c}</div>`).join('\n');
@@ -196,10 +196,26 @@ ${catSections}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script>
 var _history=[];
+const CATS = ${JSON.stringify(CATEGORIES)};
+function activeCatFor(id){
+  if(id && id.indexOf('cat-')===0){ return decodeURIComponent(id.slice(4)); }
+  const el=document.getElementById(id);
+  if(el){
+    const tags=[...el.querySelectorAll('.tags .tag')].map(t=>t.textContent.trim());
+    for(const c of CATS){ if(tags.includes(c)) return c; }
+  }
+  return null;
+}
+function highlightCat(cat){
+  document.querySelectorAll('#navlist a[data-cat]').forEach(a=>{
+    if(cat && a.getAttribute('data-cat')===cat) a.classList.add('active');
+    else a.classList.remove('active');
+  });
+}
 function show(id){
   document.querySelectorAll('.view').forEach(s=>s.style.display='none');
   const el=document.getElementById(id);
-  if(el){ el.style.display='block'; window.scrollTo(0,0); _history.push(id); }
+  if(el){ el.style.display='block'; window.scrollTo(0,0); _history.push(id); highlightCat(activeCatFor(id)); }
 }
 function goBack(){
   if(_history.length>1){ _history.pop(); const prev=_history.pop(); show(prev); }
@@ -207,12 +223,13 @@ function goBack(){
 }
 function filter(){
   const q=document.getElementById('search').value.toLowerCase().trim();
-  if(!q){ show('${homeId}'); return; }
+  if(!q){ show('${homeId}'); highlightCat(null); return; }
   document.querySelectorAll('.view').forEach(s=>s.style.display='none');
   document.querySelectorAll('.tiddler').forEach(s=>{
     if(s.innerText.toLowerCase().includes(q)){ s.style.display='block'; }
   });
   window.scrollTo(0,0);
+  highlightCat(null);
 }
 // Al cargar: deep-link por hash si existe, si no -> Inicio
 window.addEventListener('DOMContentLoaded',()=>{
@@ -230,7 +247,7 @@ async function exportZip(){
     zip.file('index.html', document.documentElement.outerHTML);
     const dirs=['img','video','pdf'];
     for(const d of dirs){
-      const re=new RegExp(d+'/[^"\\\\\\'\\\\s)]+','g');
+      const re=new RegExp(d+'/[^"\\x27\\s)]+','g');
       const found=new Set([...document.documentElement.outerHTML.matchAll(re)].map(m=>m[0]));
       for(const rel of found){
         try{
