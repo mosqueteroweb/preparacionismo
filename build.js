@@ -53,34 +53,47 @@ function esc(s) {
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
 }
-function wiki2html(body) {
-  // Seguridad: escapar todo salvo bloques <html>...</html> explícitos (controlados por el autor).
-  const segs = body.split(/(<html>[\s\S]*?<\/html>)/g);
+function wiki2html(body, title) {
+  // Seguridad: escapar todo salvo bloques permitidos (controlados por el autor).
+  // Permitidos como HTML crudo: <html>, <iframe https>, <video>.
+  const segs = body.split(/(<html>[\s\S]*?<\/html>|<iframe[\s\S]*?<\/iframe>|<video[\s\S]*?<\/video>)/g);
   let h = '';
   for (const seg of segs) {
     if (seg.startsWith('<html>')) { h += seg.slice(6, -7); continue; }
+    if (/^<iframe/i.test(seg)) {
+      if (/src\s*=\s*["'](https:\/\/|pdf\/)/i.test(seg)) { h += seg; continue; }
+      h += esc(seg); continue;
+    }
+    if (/^<video/i.test(seg)) { h += seg; continue; }
     h += esc(seg);
   }
-  h = h
+  const formatInline = (s) => s
     .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, (m, t, u) => {
       const ok = /^(https?:|mailto:)/i.test(u.trim());
       const safe = u.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-      return ok ? `<a href='${safe}' target='_blank' rel='noopener noreferrer'>${t}</a>`
-                : `<a href='#'>${t}</a>`;
+      return ok ? `<a href='${safe}' target='_blank' rel='noopener noreferrer'>${t}</a>` : `<a href='#'>${t}</a>`;
     })
     .replace(/\[\[([^\]]+)\]\]/g, '<a href=\'#\'>$1</a>')
-    .replace(/'''([^']+)'''/g, '<b>$1</b>')
-    .replace(/''([^']+)''/g, '<i>$1</i>');
+    .replace(/&#39;&#39;&#39;([^&]+?)&#39;&#39;&#39;/g, '<strong>$1</strong>')
+    .replace(/&#39;&#39;([^&]+?)&#39;&#39;/g, '<em>$1</em>')
+    .replace(/\*\*([^*]+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*]+?)\*/g, '<em>$1</em>');
   const blocks = h.split('\n');
-  let out = '', inList = false;
+  let out = '', inList = false, listType = '';
+  const closeList = () => { if (inList) { out += `</${listType}>`; inList = false; } };
+  let first = true;
   for (let line of blocks) {
-    if (line.startsWith('! ')) { if(inList){out+='</ul>';inList=false;} out += `<h1>${line.slice(2)}</h1>`; }
-    else if (line.startsWith('!! ')) { if(inList){out+='</ul>';inList=false;} out += `<h2>${line.slice(3)}</h2>`; }
-    else if (line.startsWith('# ')) { if(!inList){out+='<ol>';inList='ol';} out += `<li>${line.slice(2)}</li>`; }
-    else if (line.startsWith('* ')) { if(!inList){out+='<ul>';inList='ul';} out += `<li>${line.slice(2)}</li>`; }
-    else { if(inList){out+=`</${inList}>`;inList=false;} if(line.trim()) out += `<p>${line}</p>`; }
+    line = formatInline(line);
+    if (first && /^! /.test(line) && title && line.slice(2).trim() === title.trim()) { first = false; continue; }
+    first = false;
+    if (line.startsWith('! ')) { closeList(); out += `<h1>${line.slice(2)}</h1>`; }
+    else if (line.startsWith('!! ')) { closeList(); out += `<h2>${line.slice(3)}</h2>`; }
+    else if (line.startsWith('!!! ')) { closeList(); out += `<h3>${line.slice(4)}</h3>`; }
+    else if (line.startsWith('# ')) { if (!inList || listType !== 'ol') { closeList(); out += '<ol>'; inList = true; listType = 'ol'; } out += `<li>${line.slice(2)}</li>`; }
+    else if (line.startsWith('* ')) { if (!inList || listType !== 'ul') { closeList(); out += '<ul>'; inList = true; listType = 'ul'; } out += `<li>${line.slice(2)}</li>`; }
+    else { closeList(); if (line.trim()) out += `<p>${line}</p>`; }
   }
-  if (inList) out += `</${inList}>`;
+  closeList();
   return out;
 }
 
@@ -140,11 +153,11 @@ function build() {
     const id = encodeURIComponent(title);
     const tags = (t.meta.tags || '').split(' ').filter(Boolean);
     const tagHtml = tags.map(tg => `<span class="tag">${esc(tg)}</span>`).join(' ');
-    const htmlBody = wiki2html(t.body).replace(/<html>[\s\S]*?<\/html>/g, '');
+    const htmlBody = wiki2html(t.body, title).replace(/<html>[\s\S]*?<\/html>/g, '');
     const rawHtml = extractRawHtml(t.body);
     return `
 <section class="view card tiddler" id="${esc(id)}">
-  <h2>${esc(title)}</h2>
+  <h1>${esc(title)}</h1>
   <div class="tags">${tagHtml}</div>
   <div class="body">${htmlBody}${rawHtml}</div>
 </section>`;
