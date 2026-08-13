@@ -185,6 +185,7 @@ function build() {
   .brand span{color:var(--accent)}
   .actions button{background:var(--accent);color:#fff;border:none;border-radius:20px;padding:.5rem 1rem;font-size:.8rem;cursor:pointer;font-family:system-ui,sans-serif;margin-left:.4rem}
   .layout{display:flex;min-height:84vh}
+  .view{display:none}
   nav{width:230px;padding:1.6rem 1.4rem;border-right:1px solid var(--line);flex-shrink:0}
   nav .search{width:100%;padding:.55rem .8rem;border:1px solid var(--line);border-radius:20px;background:#fff;margin-bottom:1.4rem;font-family:system-ui,sans-serif;font-size:.85rem;color:var(--muted)}
   nav ul{list-style:none;padding:0;margin:0}
@@ -213,6 +214,7 @@ function build() {
 </style>
 </head>
 <body>
+<noscript><p style="padding:2rem;color:#b00">Esta wiki necesita JavaScript para mostrar los artículos. Si no carga, revisa la consola del navegador.</p></noscript>
 <header>
   <div class="topbar">
     <div class="brand">Wiki <span>Preparacionismo</span></div>
@@ -221,7 +223,7 @@ function build() {
 </header>
 <div class="layout">
   <nav>
-    <input id="search" placeholder="Buscar..." onkeyup="filter()">
+    <input id="search" placeholder="Buscar..." onkeyup="filter()" aria-label="Buscar artículos en la wiki">
     <ul id="navlist">${nav}</ul>
   </nav>
   <main>
