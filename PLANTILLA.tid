@@ -1,0 +1,34 @@
+<!--
+============================================================
+  PLANTILLA PARA NUEVOS ARTÍCULOS  (copia este archivo a tiddlers/)
+============================================================
+  Cómo usarla:
+  1. Copia este archivo a la carpeta tiddlers/ con un nombre único, p.ej.:
+       tiddlers/Mi Articulo.tid
+  2. Rellena SOLO lo que está entre las líneas (borra estos comentarios).
+  3. Guarda en GitHub -> la web se actualiza sola (Actions).
+
+  REGLAS (el build falla si falta algo):
+  - La primera línea debe ser  title: Tu título
+  - Luego una línea en blanco.
+  - Luego el contenido del artículo (texto libre).
+  - Los tags van en la línea  tags: separados por espacios.
+  - Pon SIEMPRE UNA de estas 12 categorías como tag:
+      Inundación | Fuego | Nevadas | Virus/Confinamiento | Apagón
+      Agua | Alimentación | Salud | Comunicaciones | Documentación
+      Energía/luz | Herramientas
+    (más tags opcionales para temas transversales)
+
+  SINTAXIS DE CONTENIDO (lo básico):
+  - Enlace externo:        [[texto|https://...]]
+  - Negrita:  '''texto'''    Cursiva:  ''texto''
+  - Lista:  empieza cada línea con  *  (viñeta) o  #  (numerada)
+  - Si necesitas pegar HTML crudo, envuélvelo en  <html> ... </html>
+============================================================
+-->
+
+title: Título del artículo
+tags: Fuego Tema Opcional
+
+Escribe aquí el contenido del artículo en español.
+Puedes usar listas, negrita, etc.

@@ -45,10 +45,25 @@ function parseTid(raw) {
   return { meta, body };
 }
 
+function esc(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
 function wiki2html(body) {
-  let h = body
-    .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '<a href="$2" target="_blank">$1</a>')
-    .replace(/\[\[([^\]]+)\]\]/g, '<a href="#">$1</a>')
+  // Seguridad: escapar todo salvo bloques <html>...</html> explícitos (controlados por el autor).
+  const segs = body.split(/(<html>[\s\S]*?<\/html>)/g);
+  let h = '';
+  for (const seg of segs) {
+    if (seg.startsWith('<html>')) { h += seg.slice(6, -7); continue; }
+    h += esc(seg);
+  }
+  h = h
+    .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '<a href=\'$2\' target=\'_blank\'>$1</a>')
+    .replace(/\[\[([^\]]+)\]\]/g, '<a href=\'#\'>$1</a>')
     .replace(/'''([^']+)'''/g, '<b>$1</b>')
     .replace(/''([^']+)''/g, '<i>$1</i>');
   const blocks = h.split('\n');
@@ -73,8 +88,30 @@ function build() {
   const files = fs.readdirSync(TID_DIR).filter(f => f.endsWith('.tid'));
   const tiddlers = files.map(f => {
     const raw = fs.readFileSync(path.join(TID_DIR, f), 'utf8');
-    return parseTid(raw);
+    const t = parseTid(raw);
+    t._file = f;
+    return t;
   });
+
+  // Validación: evitar artículos rotos/vacíos (falla el build con mensaje claro)
+  const errs = [];
+  for (const t of tiddlers) {
+    const fn = t._file || '(desconocido)';
+    const title = (t.meta.title || '').trim();
+    if (!title) errs.push(`Tiddler sin título (archivo: ${fn}). Añade 'title: ...' en la primera línea.`);
+    const isHome = (t.meta.tags || '').split(' ').includes('Portada');
+    if (!isHome) {
+      const tags = (t.meta.tags || '').trim();
+      if (!tags) errs.push(`"${title}" no tiene tags. Añade 'tags: ...' al menos con una categoría.`);
+      const body = (t.body || '').trim();
+      if (!body) errs.push(`"${title}" tiene el cuerpo vacío. Escribe el contenido del artículo.`);
+    }
+  }
+  if (errs.length) {
+    console.error('✖ Build abortado: se encontraron tiddlers inválidos:');
+    errs.forEach(e => console.error('  - ' + e));
+    process.exit(1);
+  }
 
   // Página de inicio = tiddler con tag "Portada" (si no, el primero)
   const home = tiddlers.find(t => (t.meta.tags || '').split(' ').includes('Portada')) || tiddlers[0];
@@ -97,12 +134,12 @@ function build() {
     const title = t.meta.title || 'Sin título';
     const id = encodeURIComponent(title);
     const tags = (t.meta.tags || '').split(' ').filter(Boolean);
-    const tagHtml = tags.map(tg => `<span class="tag">${tg}</span>`).join(' ');
+    const tagHtml = tags.map(tg => `<span class="tag">${esc(tg)}</span>`).join(' ');
     const htmlBody = wiki2html(t.body).replace(/<html>[\s\S]*?<\/html>/g, '');
     const rawHtml = extractRawHtml(t.body);
     return `
-<section class="view card tiddler" id="${id}">
-  <h2>${title}</h2>
+<section class="view card tiddler" id="${esc(id)}">
+  <h2>${esc(title)}</h2>
   <div class="tags">${tagHtml}</div>
   <div class="body">${htmlBody}${rawHtml}</div>
 </section>`;
