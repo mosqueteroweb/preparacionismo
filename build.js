@@ -62,7 +62,12 @@ function wiki2html(body) {
     h += esc(seg);
   }
   h = h
-    .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '<a href=\'$2\' target=\'_blank\' rel=\'noopener noreferrer\'>$1</a>')
+    .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, (m, t, u) => {
+      const ok = /^(https?:|mailto:)/i.test(u.trim());
+      const safe = u.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+      return ok ? `<a href='${safe}' target='_blank' rel='noopener noreferrer'>${t}</a>`
+                : `<a href='#'>${t}</a>`;
+    })
     .replace(/\[\[([^\]]+)\]\]/g, '<a href=\'#\'>$1</a>')
     .replace(/'''([^']+)'''/g, '<b>$1</b>')
     .replace(/''([^']+)''/g, '<i>$1</i>');
