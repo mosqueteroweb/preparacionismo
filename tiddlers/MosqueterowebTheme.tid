@@ -30,6 +30,9 @@ html body.tc-body {
   border: 1px solid #e2d6c8;
   border-radius: 6px;
   box-shadow: 0 1px 0 #e2d6c8;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .tc-tiddler-title {
@@ -68,7 +71,8 @@ html body.tc-body {
   background: #000;
 }
 .tc-body iframe {
-  max-width: 100%;
+  max-width: 100% !important;
+  width: 100%;
   border-radius: 6px;
 }
 .tc-body img {
@@ -80,6 +84,38 @@ html body.tc-body {
 .tc-page-controls { display: none !important; }
 .tc-tiddler-controls { display: none !important; }
 .tc-sidebar-tabs { display: none !important; }
+
+/* ===== Evitar overflow de texto y horizontal ===== */
+html, body {
+  overflow-x: hidden !important;
+}
+.tc-page-container,
+.tc-page-container-inner,
+.tc-story-river {
+  max-width: 100% !important;
+}
+.tc-tiddler-title,
+.tc-tiddler-title *,
+.tc-tiddler-body,
+.tc-tiddler-body * {
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+/* ===== Móvil (<600px): padding del contenido y título más pequeño ===== */
+@media (max-width: 599px) {
+  .tc-titlebar {
+    font-size: 1.6em !important;
+  }
+  .tc-story-river {
+    padding: 16px 12px !important;
+  }
+  .tc-tiddler-frame {
+    padding: 18px 16px !important;
+  }
+}
 
 /* ===== Dos columnas (escritorio/tableta ≥600px): sidebar fijo, sin toggle ===== */
 @media (min-width: 600px) {
