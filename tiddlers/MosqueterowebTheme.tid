@@ -37,16 +37,41 @@ html body.tc-body {
   font-family: "Iowan Old Style", Palatino, Georgia, serif;
 }
 
+/* Etiquetas separadas */
+.tc-tag-list-item {
+  display: inline-block;
+  margin: 0 0.4em 0.4em 0;
+}
 .tc-tag-label {
+  display: inline-block;
+  padding: 0.22em 0.65em;
   background: #efe6db;
   color: #a85c3a;
+  border-radius: 6px;
+  font-size: 0.78em;
+  white-space: nowrap;
 }
 
 .tc-tab-buttons button.tc-tab-selected {
   border-bottom: 2px solid #a85c3a;
 }
 
-.tc-body video, .tc-body iframe, .tc-body img {
+/* Vídeos adaptados a su resolución nativa (no full-width) */
+.tc-body video {
+  max-width: 100%;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0.5em 0;
+  border-radius: 6px;
+  background: #000;
+}
+.tc-body iframe {
   max-width: 100%;
   border-radius: 6px;
+}
+.tc-body img {
+  max-width: 100%;
+  height: auto;
 }
