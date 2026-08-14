@@ -7,20 +7,20 @@ Esta es una recopilación de recursos, técnicas y materiales para la [[preparac
 
 Los contenidos se organizan por escenarios y temas transversales:
 
-* <a href="#" onclick="show('cat-Inundación')">🌊 Inundación</a>
-* <a href="#" onclick="show('cat-Fuego')">🔥 Fuego</a>
-* <a href="#" onclick="show('cat-Virus%2FConfinamiento')">🦠 Virus / Confinamiento</a>
-* <a href="#" onclick="show('cat-Apag%C3%B3n')">🔌 Apagón</a>
-* <a href="#" onclick="show('cat-Agua')">💧 Agua</a>
-* <a href="#" onclick="show('cat-Alimentación')">🥫 Alimentación</a>
-* <a href="#" onclick="show('cat-Salud')">⚕️ Salud</a>
-* <a href="#" onclick="show('cat-Comunicaciones')">📡 Comunicaciones</a>
-* <a href="#" onclick="show('cat-Energía/luz')">🔦 Energía / luz</a>
-* <a href="#" onclick="show('cat-Herramientas')">🛠️ Herramientas</a>
-* <a href="#" onclick="show('cat-Otros')">📦 Otros</a>
+* [[🌊 Inundación|Inundación]]
+* [[🔥 Fuego|Fuego]]
+* [[🦠 Virus / Confinamiento|Virus/Confinamiento]]
+* [[🔌 Apagón|Apagón]]
+* [[💧 Agua|Agua]]
+* [[🥫 Alimentación|Alimentación]]
+* [[⚕️ Salud|Salud]]
+* [[📡 Comunicaciones|Comunicaciones]]
+* [[🔦 Energía / luz|Energía/luz]]
+* [[🛠️ Herramientas|Herramientas]]
+* [[📦 Otros|Otros]]
 
 (Categoría sin contenido aún: ❄️ Nevadas. Aparecerá al añadir el primer artículo.)
 
 Cada artículo puede incluir texto, imágenes y vídeos almacenados localmente. Usa el buscador o las etiquetas para navegar.
 
-''Cómo colaborar:'' los artículos se añaden desde el asistente (Hermes) y se publican automáticamente mediante GitHub Pages.
+//Cómo colaborar:// los artículos se añaden desde el asistente (Hermes) y se publican automáticamente mediante GitHub Pages.

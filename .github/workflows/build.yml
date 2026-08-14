@@ -1,14 +1,12 @@
 name: Build Wiki
+
 on:
   push:
-    paths:
-      - 'tiddlers/**'
-      - 'build.js'
-      - '.github/workflows/build.yml'
+    branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -17,15 +15,44 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Generar index.html
-        run: node build.js
-      - name: Preparar Pages
+
+      - name: Instalar TiddlyWiki
+        run: npm install -g tiddlywiki@latest
+
+      - name: Generar index.html (TiddlyWiki)
+        run: tiddlywiki . --build index
+
+      - name: Preparar artefacto para Pages
+        run: |
+          rm -rf _site
+          mkdir -p _site
+          cp output/index.html _site/index.html
+          if [ -d "video" ]; then
+            mkdir -p _site/video
+            cp -r video/. _site/video/
+          fi
+          if [ -d "img" ]; then
+            mkdir -p _site/img
+            cp -r img/. _site/img/
+          fi
+          if [ -d "pdf" ]; then
+            mkdir -p _site/pdf
+            cp -r pdf/. _site/pdf/
+          fi
+          if [ -f "robots.txt" ]; then
+            cp robots.txt _site/robots.txt
+          fi
+          find _site -type f
+
+      - name: Subir artefacto
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
   deploy:
     needs: build

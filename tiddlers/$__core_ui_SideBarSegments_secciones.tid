@@ -1,0 +1,24 @@
+title: $:/core/ui/SideBarSegments/secciones
+tags: $:/tags/SideBarSegment
+list-after: $:/core/ui/SideBarSegments/search
+
+<div class="tc-sidebar-lists">
+<h3 class="tc-sidebar-header">Escenarios</h3>
+<ul class="mw-categorias">
+<li>[[🌊 Inundación|Inundación]]</li>
+<li>[[🔥 Fuego|Fuego]]</li>
+<li>[[❄️ Nevadas|Nevadas]]</li>
+<li>[[🦠 Virus / Confinamiento|Virus/Confinamiento]]</li>
+<li>[[🔌 Apagón|Apagón]]</li>
+</ul>
+<h3 class="tc-sidebar-header">Transversales</h3>
+<ul class="mw-categorias">
+<li>[[💧 Agua|Agua]]</li>
+<li>[[🥫 Alimentación|Alimentación]]</li>
+<li>[[⚕️ Salud|Salud]]</li>
+<li>[[📡 Comunicaciones|Comunicaciones]]</li>
+<li>[[📄 Documentación|Documentación]]</li>
+<li>[[🔦 Energía / luz|Energía/luz]]</li>
+<li>[[🛠️ Herramientas|Herramientas]]</li>
+</ul>
+</div>

@@ -38,3 +38,5 @@ node_modules/
 # === El ZIP de exportación NO se versiona (ahorra espacio en GitHub) ===
 # Se genera en el navegador del usuario al pulsar "Exportar" (JSZip).
 **/wikiprep.zip
+output/
+_site/

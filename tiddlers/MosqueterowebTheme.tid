@@ -1,0 +1,52 @@
+title: MosqueterowebTheme
+tags: $:/tags/Stylesheet
+
+/* Tema Preparacionismo — paleta tierra/terracota */
+:root {
+  --tc-page-background: #faf6f0;
+  --tc-sidebar-background: #efe6db;
+  --tc-sidebar-border: #e2d6c8;
+  --tc-tiddler-background: #fffdf9;
+  --tc-tiddler-border: #e2d6c8;
+  --tc-foreground: #3d3329;
+  --tc-muted-foreground: #8a7d6d;
+  --tc-accent-color: #a85c3a;
+  --tc-background: #faf6f0;
+  --tc-highlight: #a85c3a;
+}
+
+html body.tc-body {
+  background: #faf6f0;
+  color: #3d3329;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+.tc-sidebar-scrollable {
+  background: #efe6db;
+}
+
+.tc-tiddler-frame {
+  background: #fffdf9;
+  border: 1px solid #e2d6c8;
+  border-radius: 6px;
+  box-shadow: 0 1px 0 #e2d6c8;
+}
+
+.tc-tiddler-title {
+  color: #3d3329;
+  font-family: "Iowan Old Style", Palatino, Georgia, serif;
+}
+
+.tc-tag-label {
+  background: #efe6db;
+  color: #a85c3a;
+}
+
+.tc-tab-buttons button.tc-tab-selected {
+  border-bottom: 2px solid #a85c3a;
+}
+
+.tc-body video, .tc-body iframe, .tc-body img {
+  max-width: 100%;
+  border-radius: 6px;
+}
