@@ -75,3 +75,8 @@ html body.tc-body {
   max-width: 100%;
   height: auto;
 }
+
+/* ===== Vista solo lectura: ocultar edición/gestión ===== */
+.tc-page-controls { display: none !important; }
+.tc-tiddler-controls { display: none !important; }
+.tc-sidebar-tabs { display: none !important; }
