@@ -16,13 +16,15 @@ tags: $:/tags/Stylesheet
 }
 
 html body.tc-body {
-  background: #faf6f0;
+  background-color: #f6efe3;
+  background-image: url(img/bg-mapa.webp);
+  background-repeat: repeat;
   color: #3d3329;
   font-family: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
 }
 
 .tc-sidebar-scrollable {
-  background: #efe6db;
+  background: rgba(252, 248, 241, 0.85);
 }
 
 .tc-tiddler-frame {
