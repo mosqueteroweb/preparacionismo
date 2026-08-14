@@ -1,0 +1,15 @@
+# Toallas comprimidas ultraligeras para el botiquín
+
+
+Vídeo "Toallas comprimidas ultraligeras: Perfectas para el botiquín, neceser o kit de emergencias" (7:45).
+
+<div class="ytwrap">
+<iframe width="100%" height="360" src="https://www.youtube.com/embed/vLca0sxJeXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:1px solid #ccc;border-radius:8px;"></iframe>
+</div>
+
+## Resumen (del título y descripción del vídeo)
+Estos pequeños comprimidos son un **recurso multipropósito ultraligero** muy valioso. Con un precio muy económico (unas 2 euros las 50 unidades) y un peso de solo 3 gramos por unidad, merece la pena llevar varios repartidos por bolsas y mochilas. Una de esas cosas que dan mucho servicio y cuestan poco.
+
+**Enlace al vídeo:** [YouTube — Toallas comprimidas ultraligeras para el botiquín](https://youtu.be/vLca0sxJeXM?is=V8dLwSQXW62naPEL)
+
+**Aplicación en preparacionismo:** elemento de peso y volumen mínimos para incluir en botiquines, neceseres y kits de emergencia; útiles para higiene e improvisación cuando el equipo debe ser ligero. Complementa el Manual de Primeros Auxilios y el artículo de la gasa hemostática.

@@ -1,0 +1,20 @@
+# 15 trucos con bridas (cable ties) que todos deberían conocer
+
+
+Vídeo "15 Amazing Tricks with Cable Ties that EVERYONE should know - Part 2" (14:07).
+
+<div class="ytwrap">
+<iframe width="100%" height="360" src="https://www.youtube.com/embed/AcVXJC_DC50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:1px solid #ccc;border-radius:8px;"></iframe>
+</div>
+
+## Resumen (de la descripción del vídeo, traducido)
+Formas sencillas y prácticas de usar las **bridas (cable ties)** en casa:
+- Recoger y ordenar cables.
+- Sujetar y fijar objetos en su sitio.
+- Incluso reparar cosas con estas prácticas herramientas.
+
+Aprende cómo las bridas pueden hacer tu vida más fácil y organizada. Trucos y manualidades (DIY) para reutilizar y reciclar.
+
+**Enlace al vídeo:** [YouTube — 15 trucos con bridas (cable ties)](https://youtu.be/AcVXJC_DC50?is=eql6jpy3IHMFhEN1)
+
+**Aplicación en preparacionismo:** las bridas son un recurso de peso y coste mínimos para fijaciones, reparaciones y organización de equipo en botiquines y kits. Complementa los artículos de herramientas e ingenio y de nudos.

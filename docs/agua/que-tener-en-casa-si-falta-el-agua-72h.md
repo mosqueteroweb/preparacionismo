@@ -1,0 +1,28 @@
+# Qué tener en casa si falta el agua 72h
+
+
+Si no puedes salir de casa y se corta el suministro de agua durante 72 horas, la prioridad absoluta es la reserva potable. Las personas sobreviven semanas sin comida, pero solo días sin agua.
+
+1. Reserva mínima
+- Calcula **1 galón (≈4 L) por persona y día** → para 72h, unos **12–14 L por persona** (más para niños, ancianos o mascotas).
+- Almacena en garrafas PET limpias, botellas y depósitos cerrados, lejos de luz y productos químicos.
+- Rota la reserva cada 6 meses para que no se estanque.
+
+1. Tratamiento de emergencia
+- [Filtro de agua casero](Cómo hacer un filtro de agua casero) con arena, carbón activado y piedras.
+- [Almacenamiento y purificación](Cómo almacenar agua para emergencias): hervir, pastillas potabilizadoras o cloro (siguiendo dosis).
+- No bebas de fuentes dudosas sin tratar.
+
+1. Aprovechamiento en la vivienda
+- Recoge agua de lluvia si la hay (y la limpias después).
+- Cierra el grifo general si sospechas contaminación de la red.
+- La cisterna del inodoro (tanque superior) puede usarse en último extremo tras desinfectar.
+
+1. Obtener agua sin electricidad
+Si hay una fuente cercana (pozo, depósito, acuífero superficial) y no hay red, una bomba de agua casera con botellas de plástico permite extraerla sin electricidad. Ver [Bomba de agua sin electricidad con botellas](Bomba de agua sin electricidad con botellas).
+
+1. Higiene
+- Jabón, lejía diluida para desinfectar superficies, papel higiénico y bolsas de basura.
+- Lavado de manos frecuente aunque haya poca agua (clave en confinamiento por virus).
+
+**Aplicación en preparacionismo:** cubre el evento Inundación (red cortada o contaminada), Apagón, nevadas y virus. Complementa el [decálogo de 72h](Decálogo para sobrevivir en casa 72h en confinamiento).

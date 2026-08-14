@@ -1,7 +1,0 @@
-title: Nevadas
-
-Artículos en esta categoría:
-
-<$list filter="[tag[Nevadas]!is[system]sort[title]]">
-<$link><$view field="title"/></$link><br>
-</$list>

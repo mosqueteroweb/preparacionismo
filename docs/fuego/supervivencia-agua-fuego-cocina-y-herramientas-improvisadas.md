@@ -1,0 +1,26 @@
+# Supervivencia: agua, fuego, cocina y herramientas improvisadas
+
+
+Vídeo demostrativo de técnicas de supervivencia con recursos del entorno. A continuación, el resumen por bloques temáticos.
+
+<div class="ytwrap">
+<iframe width="100%" height="360" src="https://www.youtube.com/embed/iyYqjaohHpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:1px solid #ccc;border-radius:8px;"></iframe>
+</div>
+
+## Resumen
+
+1. Agua
+Métodos rudimentarios e improvisados para filtrar agua turbia de la naturaleza, embotellarla y hervirla para hacerla segura para el consumo.
+
+1. Fuego
+Distintas formas creativas de iniciar y mantener una fogata utilizando tanto elementos cotidianos (como pilas, envases o algodón) como recursos naturales, además de técnicas para crear mechas y yesca.
+
+1. Cocina de campamento
+Trucos para preparar, calentar y cocinar alimentos al aire libre (como asar maíz o hervir huevos) construyendo soportes improvisados con ramas y envases metálicos reciclados.
+
+1. Herramientas e ingenio
+Ideas para improvisar utensilios, reparar mangos de cuchillos con cuerda paracord, crear antorchas caseras y fabricar asas o soportes para transportar leña y agua utilizando los recursos del entorno.
+
+**Enlace al vídeo:** [YouTube — Supervivencia: agua, fuego, cocina y herramientas](https://youtu.be/iyYqjaohHpk?is=6AFIGWgTRqkFcLi0)
+
+**Aplicación en preparacionismo:** estas técnicas de bajo coste y alto ingenio son la base de la autonomía en situaciones sin suministros; complementan el artículo de potabilización de agua (categoría Agua/Salud) y los decálogos de evacuación.

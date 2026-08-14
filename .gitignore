@@ -40,3 +40,9 @@ node_modules/
 **/wikiprep.zip
 output/
 _site/
+site/
+.venv/
+__pycache__/
+*.pyc
+.cache/
+.mypy_cache/

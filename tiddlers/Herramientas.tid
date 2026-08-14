@@ -1,7 +1,0 @@
-title: Herramientas
-
-Artículos en esta categoría:
-
-<$list filter="[tag[Herramientas]!is[system]sort[title]]">
-<$link><$view field="title"/></$link><br>
-</$list>

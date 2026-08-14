@@ -1,0 +1,14 @@
+# Trucos de vida útiles
+
+
+Vídeo práctico: "Useful life hacks" — trucos y soluciones caseras de utilidad para el hogar y situaciones de preparacionismo.
+
+
+<video controls width="100%" preload="metadata" style="border:1px solid #ccc;border-radius:8px;">
+  <source src="../video/trucos-vida-utiles.mp4" type="video/mp4">
+  Tu navegador no soporta vídeo HTML5.
+</video>
+
+
+## Aplicación
+Pequeños trucos prácticos que pueden resolver incidencias domésticas sin salir de casa. Complementa los recursos de [Herramientas](Herramientas).

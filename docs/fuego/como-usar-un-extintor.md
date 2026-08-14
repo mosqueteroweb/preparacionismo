@@ -1,0 +1,13 @@
+# Cómo usar un extintor
+
+Vídeo demostrativo (39 s) sobre el uso correcto de un extintor de incendios.
+
+<video controls preload="none" src="../video/extintor.mp4">▶ Ver vídeo</video>
+
+## Pasos que muestra
+1. **Romper el precinto de seguridad** (sello amarillo del asa) girándolo para retirarlo.
+2. **Acercarse al fuego** y **apuntar a la base** del incendio (no a las llamas).
+3. **Accionar la palanca** para liberar el agente extintor.
+4. Tras usarlo, **colocarlo en horizontal** para que nadie más lo use, y **recargarlo** después.
+
+YouTube Short: https://youtube.com/shorts/gfzTL5rFAks — "¿Sabes cómo usar un extintor?" (canal de cursos de sismos/incendios/primeros auxilios).

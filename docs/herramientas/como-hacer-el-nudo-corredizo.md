@@ -1,0 +1,18 @@
+# Cómo hacer el nudo corredizo
+
+
+Vídeo "Como hacer el NUDO CORREDIZO" (1:12).
+
+
+<video controls width="100%" preload="metadata" style="border:1px solid #ccc;border-radius:8px;">
+  <source src="../video/nudo-corredizo.mp4" type="video/mp4">
+  Tu navegador no soporta vídeo HTML5.
+</video>
+
+
+## Resumen (del título y descripción del vídeo)
+Cómo hacer el **nudo corredizo**. Como su nombre lo indica, este nudo es corredizo: recorre y ajusta. Es un nudo muy seguro, resistente y vistoso.
+
+**Enlace al vídeo:** [YouTube — Cómo hacer el nudo corredizo](https://youtu.be/GfnsK0T2NxY?is=-lYdChrz5ri4wKHp)
+
+**Aplicación en preparacionismo:** nudo de ajuste rápido útil para sujeciones, tendidos y cierres provisionales con cuerda. Complementa el artículo de nudos de supervivencia.

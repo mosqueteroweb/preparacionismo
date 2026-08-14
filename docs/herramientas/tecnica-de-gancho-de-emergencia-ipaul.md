@@ -1,0 +1,12 @@
+# Técnica de gancho de emergencia (iPaul)
+
+
+Vídeo demostrativo de un [防災士](https://es.wikipedia.org/wiki/Gesti%C3%B3n_de_riesgos) (especialista japonés en prevención de desastres) mostrando cómo hacer un gancho de rescate anudando una cuerda a un palo, para recuperar objetos caídos en rendijas estrechas o situaciones de emergencia.
+
+
+<video src="../video/iPaul-emergencia-ganzua.mp4" controls preload="metadata" style="width:100%;max-width:640px;border-radius:8px;"></video>
+
+
+**Enunciado original:** 演示紧急抓取棒的打结法 — cuando algo cae en una grieta estrecha, también puedes recuperarlo. Súper útil en momentos de emergencia.
+
+**Aplicación en preparacionismo:** técnica de baja tecnología, útil en buzones, desagües, rendijas de vehículos o estructuras colapsadas donde no llegan las manos.

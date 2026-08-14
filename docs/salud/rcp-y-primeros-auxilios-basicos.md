@@ -1,0 +1,22 @@
+# RCP y primeros auxilios básicos
+
+
+Resumen del manual "Primeros auxilios y supervivencia en el medio natural".
+
+**Cuatro pasos previos en cualquier accidente:**
+1. Asegúrate de que tú no estás en peligro.
+2. Comprueba que la persona respira.
+3. Parar cualquier hemorragia grave.
+4. Comprueba si perdió el conocimiento.
+
+**Funciones vitales:** respiración y circulación. Signos vitales: conciencia, respiración (16–18/min), pulso (65–80/min).
+
+**Persona sin conocimiento:** limpiar boca (vómito/sangre), aflojar ropa, posición de recuperación.
+
+**Respiración boca a boca:** 12 veces/min en adulto (cada 5 s), 20/min en niño (cada 3 s). Contraindicada con fractura de maxilar, sin dentadura, infección tuberculosa o boca séptica.
+
+**Masaje cardiaco:** manos una sobre otra en mitad inferior del esternón, comprimir 3–4 cm con brazos extendidos y peso del cuerpo.
+
+**RCP combinada (un socorrista):** 15 compresiones por cada 2 insuflaciones. (Dos socorristas: 1 insuflación por 5 compresiones.)
+
+**Fuente:** [PDF — Primeros auxilios y supervivencia en el medio natural](pdf/primeros-auxilios-supervivencia-medio-natural.pdf) (secciones 1 y 2, Generalidades y Funciones vitales).

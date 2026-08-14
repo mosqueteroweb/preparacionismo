@@ -1,0 +1,22 @@
+# Mochila y kit de emergencia para 72 horas
+
+
+Vídeos prácticos sobre cómo preparar una mochila de supervivencia para 72 horas (también llamada "bug out bag") y un kit de emergencia.
+
+## Mochila de supervivencia para 72 horas
+<div class="ytwrap">
+<iframe width="100%" height="360" src="https://www.youtube.com/embed/HK8fnGEOsHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:1px solid #ccc;border-radius:8px;margin-bottom:1rem;"></iframe>
+</div>
+Resumen (de la descripción): cómo preparar una mochila de supervivencia para 72 horas, kit ideal para emergencias (terremotos, inundaciones, crisis económicas o evacuaciones). Recurso prácticamente indispensable en la vida de cada individuo.
+
+## Kit de emergencia 72 horas — lo que necesitas
+<div class="ytwrap">
+<iframe width="100%" height="360" src="https://www.youtube.com/embed/DVtnuhfujVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:1px solid #ccc;border-radius:8px;"></iframe>
+</div>
+Resumen (de la descripción): material para montar un kit de emergencia 72 horas (mochila táctica, placa solar, frontal, etc.).
+
+**Enlaces:**
+- [YouTube — Mochila de supervivencia 72h](https://www.youtube.com/watch?v=HK8fnGEOsHs)
+- [YouTube — Kit de emergencia 72h](https://www.youtube.com/watch?v=DVtnuhfujVM)
+
+**Aplicación en preparacionismo:** el kit 72h es la base de la evacuación ante inundación, incendio o apagón prolongado. Complementa el decálogo de evacuación y el artículo de luz de emergencia.

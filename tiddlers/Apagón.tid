@@ -1,7 +1,0 @@
-title: Apagón
-
-Artículos en esta categoría:
-
-<$list filter="[tag[Apagón]!is[system]sort[title]]">
-<$link><$view field="title"/></$link><br>
-</$list>

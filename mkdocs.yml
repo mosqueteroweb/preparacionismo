@@ -1,0 +1,35 @@
+site_name: Wiki Preparacionismo
+site_description: Recursos, técnicas y materiales para la preparación ante inundaciones, incendios, nevadas, confinamientos y apagones
+site_dir: _site
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: brown
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+    - scheme: slate
+      primary: brown
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+use_directory_urls: false
+extra_css:
+  - stylesheets/extra.css
+plugins:
+  - search
+  - awesome-pages
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables

@@ -1,0 +1,17 @@
+nav:
+  - Inicio: index.md
+  - Escenarios:
+      - Inundación: inundacion
+      - Fuego: fuego
+      - Nevadas: nevadas
+      - Virus/Confinamiento: virus-confinamiento
+      - Apagón: apagon
+  - Transversales:
+      - Agua: agua
+      - Alimentación: alimentacion
+      - Salud: salud
+      - Comunicaciones: comunicaciones
+      - Documentación: documentacion
+      - Energía/luz: energia-luz
+      - Herramientas: herramientas
+      - Otros: otros

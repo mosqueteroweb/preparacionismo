@@ -1,0 +1,22 @@
+# Primeros auxilios y supervivencia en el medio natural
+
+
+Manual práctico de 21 páginas sobre primeros auxilios y supervivencia en el medio natural.
+
+<iframe src="../pdf/primeros-auxilios-supervivencia-medio-natural.pdf" width="100%" height="600px" style="border:1px solid #ccc;border-radius:8px;"></iframe>
+
+## Resumen del contenido
+El documento se organiza en primeros auxilios y técnicas de supervivencia en entorno natural:
+
+***Generalidades y socorrismo:** qué son los primeros auxilios, los 4 pasos previos (seguridad propia, comprobar respiración, parar hemorragias, valorar consciencia) y la actuación del socorrista (serenidad, no hacer lo que se ignora, responsabilidad, improvisación, agilizar traslado).
+***Botiquín de emergencias:** vendas, gasas, algodón, esparadrapo, antiséptico, agua oxigenada, torniquetes, tablilla, alcohol, suero glucosado, tijeras, pinzas, analgésico, termómetro. Y complementos para el medio natural: cuerda, cacao, imperdibles, linterna y silbato, loción de calamina.
+***Funciones vitales y signos vitales.**
+***Heridas y hemorragias:** tipos, control y torniquetes.
+***Quemaduras, fracturas e inmovilizaciones.**
+***Shock, asfixia y trastornos neurológicos.**
+***Mordeduras y envenenamientos.**
+***Supervivencia en el medio natural:** obtención de agua, refugio, hoguera, pesca y orientación.
+
+**Enlace al documento:** [PDF — Primeros auxilios y supervivencia en el medio natural](pdf/primeros-auxilios-supervivencia-medio-natural.pdf)
+
+**Aplicación en preparacionismo:** referencia compacta y portable para el botiquín y la mochila; cubre tanto sanidad básica como supervivencia práctica. Complementa el Manual de Primeros Auxilios y los artículos de gasa hemostática y toallas comprimidas.

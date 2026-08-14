@@ -1,0 +1,21 @@
+# Agua en supervivencia
+
+
+Resumen del manual "Primeros auxilios y supervivencia en el medio natural".
+
+El agua es necesidad de primer orden: sin ella no se sobrevive más que unos días.
+
+**Cómo sobrevivir:**
+1. No comas hasta asegurar una fuente de agua potable.
+2. No racionar el agua: bebe cuanta puedas cuando puedas.
+3. La orina indica deshidratación: cuanto más oscura, más deshidratado estás.
+4. El agua recogida al amanecer (más fría) es mejor: las bacterias se reproducen más en agua caliente.
+5. Para reducir deshidratación: sombra, movimiento lento, cubrir piel expuesta.
+
+**Fuentes de agua (sin equipo):**
+- Rocío: mopa de tela absorbente al amanecer; hervir después.
+- Lluvia y nieve: la lluvia es la más segura; la nieve pura pero costosa derretir (8–10 recipientes de nieve = 1 de agua).
+- Hielo: no es puro, hervir siempre.
+- Arroyos, ríos y lagos: a menudo contaminados (animales, acción humana); tratar antes de beber.
+
+**Fuente:** [PDF — Primeros auxilios y supervivencia en el medio natural](pdf/primeros-auxilios-supervivencia-medio-natural.pdf) (sección 5, Agua).

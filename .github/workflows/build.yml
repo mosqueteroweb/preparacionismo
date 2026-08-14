@@ -1,4 +1,4 @@
-name: Build Wiki
+name: Deploy preparacionismo to GitHub Pages
 
 on:
   push:
@@ -10,44 +10,35 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          node-version: '20'
+          python-version: '3.12'
 
-      - name: Instalar TiddlyWiki
-        run: npm install -g tiddlywiki@latest
+      - name: Instalar MkDocs
+        run: pip install mkdocs-material mkdocs-awesome-pages-plugin
 
-      - name: Generar index.html (TiddlyWiki)
-        run: tiddlywiki . --build index
+      - name: Build MkDocs
+        run: mkdocs build
 
-      - name: Preparar artefacto para Pages
+      - name: Preparar artefacto
         run: |
-          rm -rf _site
-          mkdir -p _site
-          cp output/index.html _site/index.html
-          if [ -d "video" ]; then
-            mkdir -p _site/video
-            cp -r video/. _site/video/
-          fi
-          if [ -d "img" ]; then
-            mkdir -p _site/img
-            cp -r img/. _site/img/
-          fi
-          if [ -d "pdf" ]; then
-            mkdir -p _site/pdf
-            cp -r pdf/. _site/pdf/
-          fi
           if [ -f "robots.txt" ]; then
             cp robots.txt _site/robots.txt
+            echo "robots.txt copiado"
           fi
-          find _site -type f
+          echo "Contenido de _site:"
+          find _site -maxdepth 2 -type f | head -30
 
       - name: Subir artefacto
         uses: actions/upload-pages-artifact@v3
@@ -61,6 +52,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Desplegar en Pages
+      - name: Publicar en Pages
         id: deployment
         uses: actions/deploy-pages@v4

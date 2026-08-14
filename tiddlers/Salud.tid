@@ -1,7 +1,0 @@
-title: Salud
-
-Artículos en esta categoría:
-
-<$list filter="[tag[Salud]!is[system]sort[title]]">
-<$link><$view field="title"/></$link><br>
-</$list>
