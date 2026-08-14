@@ -16,7 +16,7 @@ Resumen (de la descripción): cómo preparar una mochila de supervivencia para 7
 Resumen (de la descripción): material para montar un kit de emergencia 72 horas (mochila táctica, placa solar, frontal, etc.).
 
 **Enlaces:**
-- [YouTube — Mochila de supervivencia 72h](https://www.youtube.com/watch?v=HK8fnGEOsHs)
-- [YouTube — Kit de emergencia 72h](https://www.youtube.com/watch?v=DVtnuhfujVM)
+- [YouTube — Mochila de supervivencia 72h](https://www.youtube.com/watch)
+- [YouTube — Kit de emergencia 72h](https://www.youtube.com/watch)
 
 **Aplicación en preparacionismo:** el kit 72h es la base de la evacuación ante inundación, incendio o apagón prolongado. Complementa el decálogo de evacuación y el artículo de luz de emergencia.

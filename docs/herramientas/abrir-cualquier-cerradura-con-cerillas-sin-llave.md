@@ -10,6 +10,6 @@ Vídeo "Crazy Way To Open Any Lock With Matches Without a Key! Amazing Tricks Wi
 ## Resumen (del título y descripción del vídeo, traducido)
 Una forma asombrosa de **abrir cualquier cerradura con cerillas sin necesidad de llave**: trucos asombrosos con cerillas.
 
-**Enlace al vídeo:** [YouTube — Abrir cualquier cerradura con cerillas sin llave](https://youtu.be/SHnf-wpIoAI?is=_oY8487SMI3cbuXF)
+**Enlace al vídeo:** [YouTube — Abrir cualquier cerradura con cerillas sin llave](https://youtu.be/SHnf-wpIoAI)
 
 **Nota:** el contenido es un truco de manualidades/ingenio; en preparacionismo prioriza métodos legales y seguros para el acceso a tus propios recursos. Úsalo solo sobre cerraduras de tu propiedad.

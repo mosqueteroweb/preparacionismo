@@ -18,6 +18,6 @@ Los 7 nudos de supervivencia o montaña más útiles y los que más utiliza el a
 
 Espera que os sean de utilidad para montaña, acampada y situaciones de emergencia.
 
-**Enlace al vídeo:** [YouTube — Top 7 nudos de supervivencia y montaña](https://youtu.be/7Rmc6e7tvLo?is=RbAioJUlNGHmOScl)
+**Enlace al vídeo:** [YouTube — Top 7 nudos de supervivencia y montaña](https://youtu.be/7Rmc6e7tvLo)
 
 **Aplicación en preparacionismo:** el dominio de nudos básicos es fundamental para refugios, transporte de carga, sujeción de equipo y seguridad en el medio natural. Complementa los artículos de herramientas e ingenio y de supervivencia.

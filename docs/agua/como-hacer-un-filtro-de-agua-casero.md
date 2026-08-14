@@ -13,6 +13,6 @@ Vídeo práctico paso a paso sobre cómo construir un filtro de agua casero con 
 ## Resumen (de la descripción)
 Cómo hacer un filtro de agua casero paso a paso usando materiales sencillos como arena, carbón activado y piedras. Aprende cómo se limpia el agua.
 
-**Enlace:** [YouTube — Filtro de agua casero](https://www.youtube.com/watch?v=ywQfrQC96Tc)
+**Enlace:** [YouTube — Filtro de agua casero](https://www.youtube.com/watch)
 
 **Aplicación en preparacionismo:** método de bajo coste para mejorar la potabilidad del agua en cualquier evento (inundación, apagón, confinamiento). Complementa los artículos de potabilización y almacenamiento de agua.

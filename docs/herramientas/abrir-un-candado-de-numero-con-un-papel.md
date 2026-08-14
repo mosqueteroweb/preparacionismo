@@ -11,4 +11,4 @@ Vídeo práctico: cómo abrir una cerradura de número (candado de combinación)
 
 
 ## Aplicación
-Conocer cómo funcionan las cerraduras de combinación puede servir en situaciones donde necesites abrir un candado propio sin llave. Complementa los recursos de [Herramientas](Herramientas) (nudos, ganzúa, bridas).
+Conocer cómo funcionan las cerraduras de combinación puede servir en situaciones donde necesites abrir un candado propio sin llave. Complementa los recursos de [Herramientas](../herramientas/index.md) (nudos, ganzúa, bridas).

@@ -15,6 +15,6 @@ Cómo hacer una **luz de emergencia casera para apagones con sal y aceite**, ide
 
 Si te quedas sin electricidad, esta solución es **fácil, económica y efectiva**: con solo un bote de cristal, sal, aceite y un trozo de tela. Puede sustituir o complementar otras opciones (baterías, LED, luz de camping, linternas, etc.).
 
-**Enlace al vídeo:** [YouTube — LUZ con SAL y ACEITE (apagón)](https://youtu.be/FEZnZVJxNOo?is=mCKE2XCY44oVXtB-)
+**Enlace al vídeo:** [YouTube — LUZ con SAL y ACEITE (apagón)](https://youtu.be/FEZnZVJxNOo)
 
 **Aplicación en preparacionismo:** fuente de iluminación de respaldo de coste casi nulo con materiales domésticos, clave en un plan de emergencia ante apagones prolongados.

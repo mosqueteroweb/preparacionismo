@@ -13,6 +13,6 @@ Vídeo práctico sobre qué no debe faltar en un kit de supervivencia para un ap
 ## Resumen
 Qué no debe faltar en el kit de supervivencia ante un apagón: elementos relacionados con la nevera (conservación de alimentos sin electricidad) y la radio (información cuando caen las redes).
 
-**Enlace:** [YouTube — Kit apagón nevera/radio](https://www.youtube.com/watch?v=2cvfOzpS2ek)
+**Enlace:** [YouTube — Kit apagón nevera/radio](https://www.youtube.com/watch)
 
 **Aplicación en preparacionismo:** base del evento Apagón; combina conservación de frío y recepción de información offline. Complementa el kit 72h y las radios de comunicaciones.

@@ -32,6 +32,6 @@ Este método integra varios sistemas en uno. Utiliza un recipiente donde se ejer
 - 🕒 **Regla de los 3**: aire, agua y alimento son críticos para la supervivencia (prioriza el agua).
 - 💡 **Lleva siempre al menos dos métodos y combínalos** para aumentar la seguridad.
 
-**Enlace al vídeo:** [YouTube — 5 métodos para potabilizar agua](https://youtu.be/9Y6QxLR6v8Q?is=oo_Glja_iSiymS_K)
+**Enlace al vídeo:** [YouTube — 5 métodos para potabilizar agua](https://youtu.be/9Y6QxLR6v8Q)
 
 **Aplicación en preparacionismo:** el agua potable es el recurso nº 1 tras el aire. Disponer de métodos redundantes (p. ej. hervir + pastillas, o filtro + UV) garantiza agua segura aunque falle uno.

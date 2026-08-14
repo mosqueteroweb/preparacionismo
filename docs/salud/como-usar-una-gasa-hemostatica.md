@@ -16,6 +16,6 @@ Una **gasa hemostática** es un apósito impregnado con agentes que aceleran la 
 - Mantener presión firme y sostenida sobre la zona.
 - Asegurar el vendaje para mantener la presión mientras se busca atención avanzada.
 
-**Enlace al vídeo:** [YouTube — Como usar una gasa hemostatica](Sargento Hector G Bernal|https://youtu.be/jwjudiuk29g?is=vzXODYNWmcv9_q9m)
+**Enlace al vídeo:** [YouTube — Como usar una gasa hemostatica](https://youtu.be/jwjudiuk29g)
 
 **Aplicación en preparacionismo:** elemento clave del botiquín de primeros auxilios para hemorragias graves; complementa el Manual de Primeros Auxilios (ver categoría Salud).

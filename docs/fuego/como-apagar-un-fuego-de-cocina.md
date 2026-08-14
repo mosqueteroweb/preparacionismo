@@ -21,7 +21,7 @@ Resumen (de la descripción): cómo apagar fuego en cocina; ¡NO eches agua al a
 
 
 **Enlaces:**
-- [YouTube — Apagar fuego cocina (NO agua)](https://www.youtube.com/watch?v=0uUHkW_vEmo)
-- [YouTube — Apagar fuego cocina segura](https://www.youtube.com/watch?v=kgWZlASkYyw)
+- [YouTube — Apagar fuego cocina (NO agua)](https://www.youtube.com/watch)
+- [YouTube — Apagar fuego cocina segura](https://www.youtube.com/watch)
 
 **Aplicación en preparacionismo:** el fuego en cocina es uno de los incidentes domésticos más frecuentes; saber actuar evita que un conato se convierta en un incendio mayor (evento Fuego). Complementa el decálogo de evacuación por incendio.

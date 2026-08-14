@@ -1,7 +1,0 @@
-# Virus/Confinamiento
-
-Artículos en esta categoría:
-
-<$list filter="[tag[Virus/Confinamiento]!is[system]sort[title]]">
-<$link><$view field="title"/></$link><br>
-</$list>

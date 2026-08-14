@@ -14,6 +14,6 @@ Enlaces de referencia del vídeo:
 - Listado oficial de frecuencias de emergencia: https://emergencias.ure.es/frecuencias/
 - Equipos mencionados (principiantes): Baofeng DM-1701 con OpenGD77, Ailunce HD2, TYT 390 GPS.
 
-**Enlace al vídeo:** [YouTube — Todas las frecuencias de emergencias en radio](https://youtu.be/Xi0nWMwG0l8?is=S_-d-WfAUtyk8idS)
+**Enlace al vídeo:** [YouTube — Todas las frecuencias de emergencias en radio](https://youtu.be/Xi0nWMwG0l8)
 
 **Aplicación en preparacionismo:** disponer de las frecuencias de emergencia en la radio es clave cuando caen las redes celulares. Complementa los manuales de radioaficionado y los walkies de la categoría Comunicaciones.

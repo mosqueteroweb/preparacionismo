@@ -14,4 +14,4 @@ Vídeo práctico: cómo construir una bomba de agua casera con botellas de plás
 "Water pump without electricity from plastic bottles" — bomba de agua construida con botellas de plástico, sin necesidad de electricidad.
 
 ## Aplicación
-Si hay una fuente cercana (pozo, depósito, acuífero superficial) y se corta la red, este ingenio permite extraer agua de forma manual. Complementa los artículos de [reserva de agua](Qué tener en casa si falta el agua 72h) y [filtro casero](Cómo hacer un filtro de agua casero).
+Si hay una fuente cercana (pozo, depósito, acuífero superficial) y se corta la red, este ingenio permite extraer agua de forma manual. Complementa los artículos de [reserva de agua](agua/que-tener-en-casa-si-falta-el-agua-72h.md) y [filtro casero](agua/como-hacer-un-filtro-de-agua-casero.md).

@@ -11,4 +11,4 @@ Vídeo práctico: nudos fáciles y útiles de conocer para situaciones de prepar
 
 
 ## Aplicación
-Saber hacer nudos básicos sirve para asegurar cargas, improvisar sujeciones, tender una línea de ropa interior/secado o fijar elementos cuando no puedes salir de casa. Complementa los recursos de [Herramientas](Herramientas) y el [decálogo de 72h](Decálogo para sobrevivir en casa 72h en confinamiento).
+Saber hacer nudos básicos sirve para asegurar cargas, improvisar sujeciones, tender una línea de ropa interior/secado o fijar elementos cuando no puedes salir de casa. Complementa los recursos de [Herramientas](../herramientas/index.md) y el [decálogo de 72h](virus-confinamiento/decalogo-para-sobrevivir-en-casa-72h-en-confinamiento.md).

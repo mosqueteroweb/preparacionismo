@@ -11,4 +11,4 @@ Vídeo práctico: "Useful life hacks" — trucos y soluciones caseras de utilida
 
 
 ## Aplicación
-Pequeños trucos prácticos que pueden resolver incidencias domésticas sin salir de casa. Complementa los recursos de [Herramientas](Herramientas).
+Pequeños trucos prácticos que pueden resolver incidencias domésticas sin salir de casa. Complementa los recursos de [Herramientas](../herramientas/index.md).

@@ -16,7 +16,7 @@ Resumen (de la descripción): cómo almacenar agua de forma segura, errores comu
 Resumen (de la descripción): instrucciones paso a paso para usar recipientes propios y conservar agua en el hogar. Las personas pueden sobrevivir semanas sin comida, pero solo días sin agua; se recomienda tener reserva para 14 días (1 galón por persona y día).
 
 **Enlaces:**
-- [YouTube — Almacenar agua por años](https://www.youtube.com/watch?v=1cwGO5vVPeE)
-- [YouTube — Almacenar agua en emergencia](https://www.youtube.com/watch?v=-fp8cNU2k84)
+- [YouTube — Almacenar agua por años](https://www.youtube.com/watch)
+- [YouTube — Almacenar agua en emergencia](https://www.youtube.com/watch)
 
 **Aplicación en preparacionismo:** el agua es la prioridad absoluta en cualquier evento (inundación, apagón, confinamiento). Complementa los artículos de potabilización y filtro de agua casero.
