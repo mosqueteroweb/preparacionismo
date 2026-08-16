@@ -4,7 +4,7 @@ Nudos, ganzúas y bricolaje de emergencia:
 
 <div class="grid cards" markdown>
 
-- __15 trucos con bridas (cable ties) que todos deberían conocer__
+- [__15 trucos con bridas (cable ties) que todos deberían conocer__](15-trucos-con-bridas-cable-ties-que-todos-deberian-conocer.md)
 
     ---
 
@@ -12,7 +12,7 @@ Nudos, ganzúas y bricolaje de emergencia:
 
     [:octicons-arrow-right-24: Leer](15-trucos-con-bridas-cable-ties-que-todos-deberian-conocer.md)
 
-- __Abrir cualquier cerradura con cerillas sin llave__
+- [__Abrir cualquier cerradura con cerillas sin llave__](abrir-cualquier-cerradura-con-cerillas-sin-llave.md)
 
     ---
 
@@ -20,7 +20,7 @@ Nudos, ganzúas y bricolaje de emergencia:
 
     [:octicons-arrow-right-24: Leer](abrir-cualquier-cerradura-con-cerillas-sin-llave.md)
 
-- __Abrir un candado de número con un papel__
+- [__Abrir un candado de número con un papel__](abrir-un-candado-de-numero-con-un-papel.md)
 
     ---
 
@@ -28,7 +28,7 @@ Nudos, ganzúas y bricolaje de emergencia:
 
     [:octicons-arrow-right-24: Leer](abrir-un-candado-de-numero-con-un-papel.md)
 
-- __Cómo hacer el nudo corredizo__
+- [__Cómo hacer el nudo corredizo__](como-hacer-el-nudo-corredizo.md)
 
     ---
 
@@ -36,7 +36,7 @@ Nudos, ganzúas y bricolaje de emergencia:
 
     [:octicons-arrow-right-24: Leer](como-hacer-el-nudo-corredizo.md)
 
-- __Manual de Supervivencia y Preparacionismo (EES&B)__
+- [__Manual de Supervivencia y Preparacionismo (EES&B)__](manual-de-supervivencia-y-preparacionismo-ees-b.md)
 
     ---
 
@@ -44,7 +44,7 @@ Nudos, ganzúas y bricolaje de emergencia:
 
     [:octicons-arrow-right-24: Leer](manual-de-supervivencia-y-preparacionismo-ees-b.md)
 
-- __Mochila y kit de emergencia para 72 horas__
+- [__Mochila y kit de emergencia para 72 horas__](mochila-y-kit-de-emergencia-para-72-horas.md)
 
     ---
 
@@ -52,7 +52,7 @@ Nudos, ganzúas y bricolaje de emergencia:
 
     [:octicons-arrow-right-24: Leer](mochila-y-kit-de-emergencia-para-72-horas.md)
 
-- __Nudos fáciles y útiles__
+- [__Nudos fáciles y útiles__](nudos-faciles-y-utiles.md)
 
     ---
 
@@ -60,7 +60,7 @@ Nudos, ganzúas y bricolaje de emergencia:
 
     [:octicons-arrow-right-24: Leer](nudos-faciles-y-utiles.md)
 
-- __Técnica de gancho de emergencia (iPaul)__
+- [__Técnica de gancho de emergencia (iPaul)__](tecnica-de-gancho-de-emergencia-ipaul.md)
 
     ---
 
@@ -68,7 +68,7 @@ Nudos, ganzúas y bricolaje de emergencia:
 
     [:octicons-arrow-right-24: Leer](tecnica-de-gancho-de-emergencia-ipaul.md)
 
-- __Top 7 nudos de supervivencia y montaña__
+- [__Top 7 nudos de supervivencia y montaña__](top-7-nudos-de-supervivencia-y-montana.md)
 
     ---
 
@@ -76,7 +76,7 @@ Nudos, ganzúas y bricolaje de emergencia:
 
     [:octicons-arrow-right-24: Leer](top-7-nudos-de-supervivencia-y-montana.md)
 
-- __Trucos de vida útiles__
+- [__Trucos de vida útiles__](trucos-de-vida-utiles.md)
 
     ---
 

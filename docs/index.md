@@ -6,7 +6,7 @@ Recopilación de recursos, técnicas y materiales para la preparación ante situ
 
 <div class="grid cards" markdown>
 
-- :material-water:{ .lg .middle } __Inundación__
+- :material-water:{ .lg .middle } [__Inundación__](inundacion/index.md)
 
     ---
 
@@ -14,7 +14,7 @@ Recopilación de recursos, técnicas y materiales para la preparación ante situ
 
     [:octicons-arrow-right-24: Ver sección](inundacion/index.md)
 
-- :material-fire:{ .lg .middle } __Fuego__
+- :material-fire:{ .lg .middle } [__Fuego__](fuego/index.md)
 
     ---
 
@@ -22,7 +22,7 @@ Recopilación de recursos, técnicas y materiales para la preparación ante situ
 
     [:octicons-arrow-right-24: Ver sección](fuego/index.md)
 
-- :material-weather-snowy-heavy:{ .lg .middle } __Nevadas__
+- :material-weather-snowy-heavy:{ .lg .middle } [__Nevadas__](nevadas/index.md)
 
     ---
 
@@ -30,7 +30,7 @@ Recopilación de recursos, técnicas y materiales para la preparación ante situ
 
     [:octicons-arrow-right-24: Ver sección](nevadas/index.md)
 
-- :material-virus:{ .lg .middle } __Virus / Confinamiento__
+- :material-virus:{ .lg .middle } [__Virus / Confinamiento__](virus-confinamiento/index.md)
 
     ---
 
@@ -38,7 +38,7 @@ Recopilación de recursos, técnicas y materiales para la preparación ante situ
 
     [:octicons-arrow-right-24: Ver sección](virus-confinamiento/index.md)
 
-- :material-battery-alert:{ .lg .middle } __Apagón__
+- :material-battery-alert:{ .lg .middle } [__Apagón__](apagon/index.md)
 
     ---
 
@@ -52,7 +52,7 @@ Recopilación de recursos, técnicas y materiales para la preparación ante situ
 
 <div class="grid cards" markdown>
 
-- :material-cup-water:{ .lg .middle } __Agua__
+- :material-cup-water:{ .lg .middle } [__Agua__](agua/index.md)
 
     ---
 
@@ -60,7 +60,7 @@ Recopilación de recursos, técnicas y materiales para la preparación ante situ
 
     [:octicons-arrow-right-24: Ver sección](agua/index.md)
 
-- :material-food-apple:{ .lg .middle } __Alimentación__
+- :material-food-apple:{ .lg .middle } [__Alimentación__](alimentacion/index.md)
 
     ---
 
@@ -68,7 +68,7 @@ Recopilación de recursos, técnicas y materiales para la preparación ante situ
 
     [:octicons-arrow-right-24: Ver sección](alimentacion/index.md)
 
-- :material-medical-bag:{ .lg .middle } __Salud__
+- :material-medical-bag:{ .lg .middle } [__Salud__](salud/index.md)
 
     ---
 
@@ -76,7 +76,7 @@ Recopilación de recursos, técnicas y materiales para la preparación ante situ
 
     [:octicons-arrow-right-24: Ver sección](salud/index.md)
 
-- :material-radio:{ .lg .middle } __Comunicaciones__
+- :material-radio:{ .lg .middle } [__Comunicaciones__](comunicaciones/index.md)
 
     ---
 
@@ -84,7 +84,7 @@ Recopilación de recursos, técnicas y materiales para la preparación ante situ
 
     [:octicons-arrow-right-24: Ver sección](comunicaciones/index.md)
 
-- :material-file-document:{ .lg .middle } __Documentación__
+- :material-file-document:{ .lg .middle } [__Documentación__](documentacion/index.md)
 
     ---
 
@@ -92,7 +92,7 @@ Recopilación de recursos, técnicas y materiales para la preparación ante situ
 
     [:octicons-arrow-right-24: Ver sección](documentacion/index.md)
 
-- :material-lightbulb-on:{ .lg .middle } __Energía / luz__
+- :material-lightbulb-on:{ .lg .middle } [__Energía / luz__](energia-luz/index.md)
 
     ---
 
@@ -100,7 +100,7 @@ Recopilación de recursos, técnicas y materiales para la preparación ante situ
 
     [:octicons-arrow-right-24: Ver sección](energia-luz/index.md)
 
-- :material-tools:{ .lg .middle } __Herramientas__
+- :material-tools:{ .lg .middle } [__Herramientas__](herramientas/index.md)
 
     ---
 

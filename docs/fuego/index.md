@@ -4,7 +4,7 @@ Prevención, evacuación y extinción de incendios:
 
 <div class="grid cards" markdown>
 
-- __Cómo apagar un fuego de cocina__
+- [__Cómo apagar un fuego de cocina__](como-apagar-un-fuego-de-cocina.md)
 
     ---
 
@@ -12,7 +12,7 @@ Prevención, evacuación y extinción de incendios:
 
     [:octicons-arrow-right-24: Leer](como-apagar-un-fuego-de-cocina.md)
 
-- __Cómo usar un extintor__
+- [__Cómo usar un extintor__](como-usar-un-extintor.md)
 
     ---
 
@@ -20,7 +20,7 @@ Prevención, evacuación y extinción de incendios:
 
     [:octicons-arrow-right-24: Leer](como-usar-un-extintor.md)
 
-- __Decálogo: qué hacer si te evacuan de casa por un incendio cercano__
+- [__Decálogo: qué hacer si te evacuan de casa por un incendio cercano__](decalogo-que-hacer-si-te-evacuan-de-casa-por-un-incendio-cercano.md)
 
     ---
 
@@ -28,7 +28,7 @@ Prevención, evacuación y extinción de incendios:
 
     [:octicons-arrow-right-24: Leer](decalogo-que-hacer-si-te-evacuan-de-casa-por-un-incendio-cercano.md)
 
-- __Supervivencia: agua, fuego, cocina y herramientas improvisadas__
+- [__Supervivencia: agua, fuego, cocina y herramientas improvisadas__](supervivencia-agua-fuego-cocina-y-herramientas-improvisadas.md)
 
     ---
 

@@ -4,7 +4,7 @@ Walkies, radioafición y frecuencias:
 
 <div class="grid cards" markdown>
 
-- __Manual de radioaficionado novicio__
+- [__Manual de radioaficionado novicio__](manual-de-radioaficionado-novicio.md)
 
     ---
 
@@ -12,7 +12,7 @@ Walkies, radioafición y frecuencias:
 
     [:octicons-arrow-right-24: Leer](manual-de-radioaficionado-novicio.md)
 
-- __Manual PMR walkies (Aliexpress)__
+- [__Manual PMR walkies (Aliexpress)__](manual-pmr-walkies-aliexpress.md)
 
     ---
 
@@ -20,7 +20,7 @@ Walkies, radioafición y frecuencias:
 
     [:octicons-arrow-right-24: Leer](manual-pmr-walkies-aliexpress.md)
 
-- __Manual UV-K5(8) (walkie multi-banda)__
+- [__Manual UV-K5(8) (walkie multi-banda)__](manual-uv-k5-8-walkie-multi-banda.md)
 
     ---
 
@@ -28,7 +28,7 @@ Walkies, radioafición y frecuencias:
 
     [:octicons-arrow-right-24: Leer](manual-uv-k5-8-walkie-multi-banda.md)
 
-- __Retekess V115 — radio portátil todo en uno__
+- [__Retekess V115 — radio portátil todo en uno__](retekess-v115-radio-portatil-todo-en-uno.md)
 
     ---
 
@@ -36,7 +36,7 @@ Walkies, radioafición y frecuencias:
 
     [:octicons-arrow-right-24: Leer](retekess-v115-radio-portatil-todo-en-uno.md)
 
-- __Todas las frecuencias de emergencias en radio__
+- [__Todas las frecuencias de emergencias en radio__](todas-las-frecuencias-de-emergencias-en-radio.md)
 
     ---
 

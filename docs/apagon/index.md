@@ -4,7 +4,7 @@ Luz, nevera, comunicaciones y calefacción sin red:
 
 <div class="grid cards" markdown>
 
-- __Kit de supervivencia para apagón (nevera y radio)__
+- [__Kit de supervivencia para apagón (nevera y radio)__](kit-de-supervivencia-para-apagon-nevera-y-radio.md)
 
     ---
 
@@ -12,7 +12,7 @@ Luz, nevera, comunicaciones y calefacción sin red:
 
     [:octicons-arrow-right-24: Leer](kit-de-supervivencia-para-apagon-nevera-y-radio.md)
 
-- __Luz de emergencia casera automática__
+- [__Luz de emergencia casera automática__](luz-de-emergencia-casera-automatica.md)
 
     ---
 
@@ -20,7 +20,7 @@ Luz, nevera, comunicaciones y calefacción sin red:
 
     [:octicons-arrow-right-24: Leer](luz-de-emergencia-casera-automatica.md)
 
-- __Luz de emergencia con sal y aceite (apagón)__
+- [__Luz de emergencia con sal y aceite (apagón)__](luz-de-emergencia-con-sal-y-aceite-apagon.md)
 
     ---
 
@@ -28,7 +28,7 @@ Luz, nevera, comunicaciones y calefacción sin red:
 
     [:octicons-arrow-right-24: Leer](luz-de-emergencia-con-sal-y-aceite-apagon.md)
 
-- __Qué tener en casa si se corta la luz 72h__
+- [__Qué tener en casa si se corta la luz 72h__](que-tener-en-casa-si-se-corta-la-luz-72h.md)
 
     ---
 

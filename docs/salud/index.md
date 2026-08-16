@@ -4,7 +4,7 @@ Primeros auxilios, botiquines y manuales:
 
 <div class="grid cards" markdown>
 
-- __Botiquín de emergencias__
+- [__Botiquín de emergencias__](botiquin-de-emergencias.md)
 
     ---
 
@@ -12,7 +12,7 @@ Primeros auxilios, botiquines y manuales:
 
     [:octicons-arrow-right-24: Leer](botiquin-de-emergencias.md)
 
-- __Cómo usar una gasa hemostática__
+- [__Cómo usar una gasa hemostática__](como-usar-una-gasa-hemostatica.md)
 
     ---
 
@@ -20,7 +20,7 @@ Primeros auxilios, botiquines y manuales:
 
     [:octicons-arrow-right-24: Leer](como-usar-una-gasa-hemostatica.md)
 
-- __Heridas y hemorragias__
+- [__Heridas y hemorragias__](heridas-y-hemorragias.md)
 
     ---
 
@@ -28,7 +28,7 @@ Primeros auxilios, botiquines y manuales:
 
     [:octicons-arrow-right-24: Leer](heridas-y-hemorragias.md)
 
-- __Manual de primeros auxilios (Min. Salud Arg.)__
+- [__Manual de primeros auxilios (Min. Salud Arg.)__](manual-de-primeros-auxilios-min-salud-arg.md)
 
     ---
 
@@ -36,7 +36,7 @@ Primeros auxilios, botiquines y manuales:
 
     [:octicons-arrow-right-24: Leer](manual-de-primeros-auxilios-min-salud-arg.md)
 
-- __Primeros auxilios y supervivencia en el medio natural__
+- [__Primeros auxilios y supervivencia en el medio natural__](primeros-auxilios-y-supervivencia-en-el-medio-natural.md)
 
     ---
 
@@ -44,7 +44,7 @@ Primeros auxilios, botiquines y manuales:
 
     [:octicons-arrow-right-24: Leer](primeros-auxilios-y-supervivencia-en-el-medio-natural.md)
 
-- __Quemaduras y congelaciones__
+- [__Quemaduras y congelaciones__](quemaduras-y-congelaciones.md)
 
     ---
 
@@ -52,7 +52,7 @@ Primeros auxilios, botiquines y manuales:
 
     [:octicons-arrow-right-24: Leer](quemaduras-y-congelaciones.md)
 
-- __RCP y primeros auxilios básicos__
+- [__RCP y primeros auxilios básicos__](rcp-y-primeros-auxilios-basicos.md)
 
     ---
 
@@ -60,7 +60,7 @@ Primeros auxilios, botiquines y manuales:
 
     [:octicons-arrow-right-24: Leer](rcp-y-primeros-auxilios-basicos.md)
 
-- __Shock y fracturas__
+- [__Shock y fracturas__](shock-y-fracturas.md)
 
     ---
 
@@ -68,7 +68,7 @@ Primeros auxilios, botiquines y manuales:
 
     [:octicons-arrow-right-24: Leer](shock-y-fracturas.md)
 
-- __Toallas comprimidas ultraligeras para el botiquín__
+- [__Toallas comprimidas ultraligeras para el botiquín__](toallas-comprimidas-ultraligeras-para-el-botiquin.md)
 
     ---
 

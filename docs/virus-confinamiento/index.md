@@ -4,7 +4,7 @@ Sobrevivir en casa 72 h en confinamiento:
 
 <div class="grid cards" markdown>
 
-- __Decálogo para sobrevivir en casa 72h en confinamiento__
+- [__Decálogo para sobrevivir en casa 72h en confinamiento__](decalogo-para-sobrevivir-en-casa-72h-en-confinamiento.md)
 
     ---
 

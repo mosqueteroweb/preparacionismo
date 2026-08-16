@@ -4,7 +4,7 @@ Almacenamiento, potabilización y filtrado:
 
 <div class="grid cards" markdown>
 
-- __5 métodos para potabilizar agua__
+- [__5 métodos para potabilizar agua__](5-metodos-para-potabilizar-agua.md)
 
     ---
 
@@ -12,7 +12,7 @@ Almacenamiento, potabilización y filtrado:
 
     [:octicons-arrow-right-24: Leer](5-metodos-para-potabilizar-agua.md)
 
-- __Agua en supervivencia__
+- [__Agua en supervivencia__](agua-en-supervivencia.md)
 
     ---
 
@@ -20,7 +20,7 @@ Almacenamiento, potabilización y filtrado:
 
     [:octicons-arrow-right-24: Leer](agua-en-supervivencia.md)
 
-- __Bomba de agua sin electricidad con botellas__
+- [__Bomba de agua sin electricidad con botellas__](bomba-de-agua-sin-electricidad-con-botellas.md)
 
     ---
 
@@ -28,7 +28,7 @@ Almacenamiento, potabilización y filtrado:
 
     [:octicons-arrow-right-24: Leer](bomba-de-agua-sin-electricidad-con-botellas.md)
 
-- __Cómo almacenar agua para emergencias__
+- [__Cómo almacenar agua para emergencias__](como-almacenar-agua-para-emergencias.md)
 
     ---
 
@@ -36,7 +36,7 @@ Almacenamiento, potabilización y filtrado:
 
     [:octicons-arrow-right-24: Leer](como-almacenar-agua-para-emergencias.md)
 
-- __Cómo hacer un filtro de agua casero__
+- [__Cómo hacer un filtro de agua casero__](como-hacer-un-filtro-de-agua-casero.md)
 
     ---
 
@@ -44,7 +44,7 @@ Almacenamiento, potabilización y filtrado:
 
     [:octicons-arrow-right-24: Leer](como-hacer-un-filtro-de-agua-casero.md)
 
-- __Qué tener en casa si falta el agua 72h__
+- [__Qué tener en casa si falta el agua 72h__](que-tener-en-casa-si-falta-el-agua-72h.md)
 
     ---
 

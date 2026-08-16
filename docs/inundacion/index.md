@@ -4,7 +4,7 @@ Artículos sobre qué hacer ante una crecida:
 
 <div class="grid cards" markdown>
 
-- __Evacuación por inundación__
+- [__Evacuación por inundación__](evacuacion-por-inundacion.md)
 
     ---
 
