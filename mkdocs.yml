@@ -1,8 +1,10 @@
 site_name: Wiki Preparacionismo
 site_description: Recursos, técnicas y materiales para la preparación ante inundaciones, incendios, nevadas, confinamientos y apagones
+site_url: https://mosqueteroweb.github.io/preparacionismo/
 site_dir: _site
 theme:
   name: material
+  custom_dir: overrides
   language: es
   palette:
     - scheme: default

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block extrahead %}
+  {{ super() }}
+  <base href="{{ config.site_url }}">
+{% endblock %}
+{% block content %}
+  <h1>404 — Página no encontrada</h1>
+  <p>La página que buscas no existe o ha sido movida o eliminada.</p>
+  <p><a href="{{ config.site_url }}">Volver al inicio de la wiki</a></p>
+{% endblock %}
