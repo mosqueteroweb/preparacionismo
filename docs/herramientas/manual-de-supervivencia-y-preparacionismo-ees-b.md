@@ -17,6 +17,6 @@ Obra de difusión gratuita de la AEEPS/EES&B para mejorar la preparación ante s
 ***Usos de la radio en situaciones de supervivencia.**
 ***Formación:** criterios, particularidades de la supervivencia, talleres, roles psicológicos y anillos de seguridad.
 
-**Enlace al documento:** [PDF — Manual de Supervivencia y Preparacionismo (EES&B, v2)](pdf/Manual-de-Supervivencia-y-Preparacionismo.pdf)
+**Enlace al documento:** [PDF — Manual de Supervivencia y Preparacionismo (EES&B, v2)](../pdf/Manual-de-Supervivencia-y-Preparacionismo.pdf)
 
 **Aplicación en preparacionismo:** referencia amplia y oficial en español; complementa los resúmenes temáticos extraídos del PDF de primeros auxilios y el material de la wiki. Cubre desde el kit 72h hasta energía y conservación de alimentos.

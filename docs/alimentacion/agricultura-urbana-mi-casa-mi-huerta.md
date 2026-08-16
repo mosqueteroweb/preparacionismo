@@ -3,7 +3,7 @@
 
 Guía de técnicas de agricultura urbana del programa **Pro Huerta** (INTA + Ministerio de Desarrollo Social, Argentina). 66 páginas, texto completo. Autores: Janine Schonwald y Francisco Pescio.
 
-**Descargar:** [Agricultura_urbana.pdf](pdf/Agricultura_urbana.pdf) (15 MB)
+**Descargar:** [Agricultura_urbana.pdf](../pdf/Agricultura_urbana.pdf) (15 MB)
 
 
 <iframe src="../pdf/Agricultura_urbana.pdf" width="100%" height="600" style="border:1px solid #ccc;border-radius:8px;"></iframe>

@@ -21,4 +21,4 @@ Resumen del manual "Primeros auxilios y supervivencia en el medio natural".
 
 *Inmovilización:* usar el propio cuerpo como soporte (pañuelos) o elementos rígidos improvisados (periódicos enrollados, tablillas, tubos de cartón, paraguas). Calma el dolor y reduce el riesgo de shock.
 
-**Fuente:** [PDF — Primeros auxilios y supervivencia en el medio natural](pdf/primeros-auxilios-supervivencia-medio-natural.pdf) (secciones 5 y 7, Shock y Fracturas).
+**Fuente:** [PDF — Primeros auxilios y supervivencia en el medio natural](../pdf/primeros-auxilios-supervivencia-medio-natural.pdf) (secciones 5 y 7, Shock y Fracturas).

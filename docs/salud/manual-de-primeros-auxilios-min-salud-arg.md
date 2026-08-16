@@ -3,7 +3,7 @@
 
 Guía oficial del **Ministerio de Salud de la Nación (Argentina)** — Dirección Nacional de Emergencias Sanitarias. 42 páginas, texto completo. Dirigida a la comunidad para prevenir, reconocer y asistir a víctimas de incidentes en hogar, escuela, trabajo o vía pública.
 
-**Descargar:** [Manual_primeros_auxilios.pdf](pdf/Manual_primeros_auxilios.pdf) (1,8 MB)
+**Descargar:** [Manual_primeros_auxilios.pdf](../pdf/Manual_primeros_auxilios.pdf) (1,8 MB)
 
 
 <iframe src="../pdf/Manual_primeros_auxilios.pdf" width="100%" height="600" style="border:1px solid #ccc;border-radius:8px;"></iframe>

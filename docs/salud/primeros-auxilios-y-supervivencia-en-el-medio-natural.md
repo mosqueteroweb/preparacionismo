@@ -17,6 +17,6 @@ El documento se organiza en primeros auxilios y técnicas de supervivencia en en
 ***Mordeduras y envenenamientos.**
 ***Supervivencia en el medio natural:** obtención de agua, refugio, hoguera, pesca y orientación.
 
-**Enlace al documento:** [PDF — Primeros auxilios y supervivencia en el medio natural](pdf/primeros-auxilios-supervivencia-medio-natural.pdf)
+**Enlace al documento:** [PDF — Primeros auxilios y supervivencia en el medio natural](../pdf/primeros-auxilios-supervivencia-medio-natural.pdf)
 
 **Aplicación en preparacionismo:** referencia compacta y portable para el botiquín y la mochila; cubre tanto sanidad básica como supervivencia práctica. Complementa el Manual de Primeros Auxilios y los artículos de gasa hemostática y toallas comprimidas.

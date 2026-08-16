@@ -3,7 +3,7 @@
 
 Manual de formación para obtener la primera inscripción en el Registro Especial de Radioaficionados. 83 páginas, texto completo. Prepara para el examen (legislación, teoría básica de radio, práctica operativa y código Morse).
 
-**Descargar:** [manual-radioaficionado-novicio.pdf](pdf/manual-radioaficionado-novicio.pdf) (1,4 MB)
+**Descargar:** [manual-radioaficionado-novicio.pdf](../pdf/manual-radioaficionado-novicio.pdf) (1,4 MB)
 
 
 <iframe src="../pdf/manual-radioaficionado-novicio.pdf" width="100%" height="600" style="border:1px solid #ccc;border-radius:8px;"></iframe>

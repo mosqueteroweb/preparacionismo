@@ -18,4 +18,4 @@ El agua es necesidad de primer orden: sin ella no se sobrevive más que unos dí
 - Hielo: no es puro, hervir siempre.
 - Arroyos, ríos y lagos: a menudo contaminados (animales, acción humana); tratar antes de beber.
 
-**Fuente:** [PDF — Primeros auxilios y supervivencia en el medio natural](pdf/primeros-auxilios-supervivencia-medio-natural.pdf) (sección 5, Agua).
+**Fuente:** [PDF — Primeros auxilios y supervivencia en el medio natural](../pdf/primeros-auxilios-supervivencia-medio-natural.pdf) (sección 5, Agua).

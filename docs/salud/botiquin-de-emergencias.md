@@ -24,4 +24,4 @@ El botiquín de emergencias debe llevar el material necesario para atender urgen
 
 **Qué NO usar nunca sobre heridas:** algodón/servilletas de papel (sueltan pelusa), alcohol/yodo/lejía (queman los bordes), pomadas con antibióticos (riesgo de alergia).
 
-**Fuente:** [PDF — Primeros auxilios y supervivencia en el medio natural](pdf/primeros-auxilios-supervivencia-medio-natural.pdf) (sección 1, Generalidades).
+**Fuente:** [PDF — Primeros auxilios y supervivencia en el medio natural](../pdf/primeros-auxilios-supervivencia-medio-natural.pdf) (sección 1, Generalidades).

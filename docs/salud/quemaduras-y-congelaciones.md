@@ -19,4 +19,4 @@ Resumen del manual "Primeros auxilios y supervivencia en el medio natural".
 
 **Congelación local:** calentamiento progresivo, sin oprimir; apósitos estériles + algodón; miembro elevado; líquidos calientes a sorbos.
 
-**Fuente:** [PDF — Primeros auxilios y supervivencia en el medio natural](pdf/primeros-auxilios-supervivencia-medio-natural.pdf) (sección 4, Quemaduras y congelaciones).
+**Fuente:** [PDF — Primeros auxilios y supervivencia en el medio natural](../pdf/primeros-auxilios-supervivencia-medio-natural.pdf) (sección 4, Quemaduras y congelaciones).

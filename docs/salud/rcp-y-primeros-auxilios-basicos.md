@@ -19,4 +19,4 @@ Resumen del manual "Primeros auxilios y supervivencia en el medio natural".
 
 **RCP combinada (un socorrista):** 15 compresiones por cada 2 insuflaciones. (Dos socorristas: 1 insuflación por 5 compresiones.)
 
-**Fuente:** [PDF — Primeros auxilios y supervivencia en el medio natural](pdf/primeros-auxilios-supervivencia-medio-natural.pdf) (secciones 1 y 2, Generalidades y Funciones vitales).
+**Fuente:** [PDF — Primeros auxilios y supervivencia en el medio natural](../pdf/primeros-auxilios-supervivencia-medio-natural.pdf) (secciones 1 y 2, Generalidades y Funciones vitales).

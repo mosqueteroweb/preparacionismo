@@ -5,7 +5,7 @@ Manual de usuario del transceptor **Quansheng UV-K5(8)**, equipo de radioaficion
 
 **Web de referencia (review/hack de estos walkies):** [AlfaExploit — HamRadio #1](https://alfaexploit.com/es/posts/hamradio1/)
 
-**Descargar:** [UV-K5_8_Users_Manual.pdf](pdf/UV-K5_8_Users_Manual.pdf) (1,9 MB)
+**Descargar:** [UV-K5_8_Users_Manual.pdf](../pdf/UV-K5_8_Users_Manual.pdf) (1,9 MB)
 
 
 <iframe src="../pdf/UV-K5_8_Users_Manual.pdf" width="100%" height="600" style="border:1px solid #ccc;border-radius:8px;"></iframe>

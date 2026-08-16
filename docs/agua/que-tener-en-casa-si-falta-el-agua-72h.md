@@ -9,8 +9,8 @@ Si no puedes salir de casa y se corta el suministro de agua durante 72 horas, la
 - Rota la reserva cada 6 meses para que no se estanque.
 
 1. Tratamiento de emergencia
-- [Filtro de agua casero](agua/como-hacer-un-filtro-de-agua-casero.md) con arena, carbón activado y piedras.
-- [Almacenamiento y purificación](agua/como-almacenar-agua-para-emergencias.md): hervir, pastillas potabilizadoras o cloro (siguiendo dosis).
+- [Filtro de agua casero](como-hacer-un-filtro-de-agua-casero.md) con arena, carbón activado y piedras.
+- [Almacenamiento y purificación](como-almacenar-agua-para-emergencias.md): hervir, pastillas potabilizadoras o cloro (siguiendo dosis).
 - No bebas de fuentes dudosas sin tratar.
 
 1. Aprovechamiento en la vivienda
@@ -19,10 +19,10 @@ Si no puedes salir de casa y se corta el suministro de agua durante 72 horas, la
 - La cisterna del inodoro (tanque superior) puede usarse en último extremo tras desinfectar.
 
 1. Obtener agua sin electricidad
-Si hay una fuente cercana (pozo, depósito, acuífero superficial) y no hay red, una bomba de agua casera con botellas de plástico permite extraerla sin electricidad. Ver [Bomba de agua sin electricidad con botellas](agua/bomba-de-agua-sin-electricidad-con-botellas.md).
+Si hay una fuente cercana (pozo, depósito, acuífero superficial) y no hay red, una bomba de agua casera con botellas de plástico permite extraerla sin electricidad. Ver [Bomba de agua sin electricidad con botellas](bomba-de-agua-sin-electricidad-con-botellas.md).
 
 1. Higiene
 - Jabón, lejía diluida para desinfectar superficies, papel higiénico y bolsas de basura.
 - Lavado de manos frecuente aunque haya poca agua (clave en confinamiento por virus).
 
-**Aplicación en preparacionismo:** cubre el evento Inundación (red cortada o contaminada), Apagón, nevadas y virus. Complementa el [decálogo de 72h](virus-confinamiento/decalogo-para-sobrevivir-en-casa-72h-en-confinamiento.md).
+**Aplicación en preparacionismo:** cubre el evento Inundación (red cortada o contaminada), Apagón, nevadas y virus. Complementa el [decálogo de 72h](../virus-confinamiento/decalogo-para-sobrevivir-en-casa-72h-en-confinamiento.md).

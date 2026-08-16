@@ -17,4 +17,4 @@ Resumen del manual "Primeros auxilios y supervivencia en el medio natural".
 
 **Qué NO usar nunca:** algodón/servilletas de papel, alcohol/yodo/lejía, pomadas con antibióticos.
 
-**Fuente:** [PDF — Primeros auxilios y supervivencia en el medio natural](pdf/primeros-auxilios-supervivencia-medio-natural.pdf) (sección 3, Heridas y hemorragias).
+**Fuente:** [PDF — Primeros auxilios y supervivencia en el medio natural](../pdf/primeros-auxilios-supervivencia-medio-natural.pdf) (sección 3, Heridas y hemorragias).
