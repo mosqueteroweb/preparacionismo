@@ -1,5 +1,5 @@
 # ❄️ Nevadas
 
-Artículos en esta sección:
+Cortes, aislamiento y frío.
 
-
+*Sección en preparación — próximamente artículos sobre cómo afrontar nevadas y olas de frío.*
