@@ -1,0 +1,25 @@
+/* Fondo con imagen (textura orgánica tierra) — SOLO en modo claro */
+body[data-md-color-scheme="default"] {
+  background-image: url(../assets/bg-mapa.webp);
+  background-repeat: repeat;
+}
+
+/* Títulos en serif (estilo rústico/terracota) */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: "Iowan Old Style", Palatino, Georgia, serif;
+}
+
+/* Tarjetas (grid cards): borde terracota que destaque + esquinas redondeadas */
+.md-typeset .grid.cards > ul > li {
+  border: 1.5px solid rgba(168, 92, 58, 0.55) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 1px 4px rgba(168, 92, 58, 0.10) !important;
+  transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease !important;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: rgba(168, 92, 58, 0.85) !important;
+  box-shadow: 0 4px 14px rgba(168, 92, 58, 0.22) !important;
+  transform: translateY(-2px);
+}

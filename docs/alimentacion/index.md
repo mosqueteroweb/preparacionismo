@@ -1,6 +1,15 @@
 # 🥫 Alimentación
 
-Artículos en esta sección:
+Reservas y huerta urbana:
 
-- [Agricultura urbana (Mi casa, mi huerta)](agricultura-urbana-mi-casa-mi-huerta.md)
+<div class="grid cards" markdown>
 
+- __Agricultura urbana (Mi casa, mi huerta)__
+
+    ---
+
+    Guía de técnicas de agricultura urbana del programa Pro Huerta (INTA).
+
+    [:octicons-arrow-right-24: Leer](agricultura-urbana-mi-casa-mi-huerta.md)
+
+</div>

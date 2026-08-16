@@ -1,350 +1,113 @@
 # Wiki Preparacionismo
 
-Recopilación de recursos, técnicas y materiales para la [preparación# Wiki Preparacionismo
-
-Recopilación de recursos, técnicas y materiales para la [preparación](https://es.wikipedia.org/wiki/Supervivencia) ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
+Recopilación de recursos, técnicas y materiales para la preparación ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
 
 ## Escenarios
 
-- 🌊 **[Inundación](inundacion/index.md)** — qué hacer antes, durante y después de una crecida.
-- 🔥 **[Fuego](fuego/index.md)** — prevención, evacuación y extinción de incendios.
-- ❄️ **[Nevadas](nevadas/index.md)** — cortes, aislamiento y frío.
-- 🦠 **[Virus / Confinamiento](virus-confinamiento/index.md)** — sobrevivir en casa 72 h.
-- 🔌 **[Apagón](apagon/index.md)** — luz, nevera, comunicaciones y calefacción sin red.
+<div class="grid cards" markdown>
+
+- :material-water:{ .lg .middle } __Inundación__
+
+    ---
+
+    Qué hacer antes, durante y después de una crecida.
+
+    [:octicons-arrow-right-24: Ver sección](inundacion/index.md)
+
+- :material-fire:{ .lg .middle } __Fuego__
+
+    ---
+
+    Prevención, evacuación y extinción de incendios.
+
+    [:octicons-arrow-right-24: Ver sección](fuego/index.md)
+
+- :material-weather-snowy-heavy:{ .lg .middle } __Nevadas__
+
+    ---
+
+    Cortes, aislamiento y frío.
+
+    [:octicons-arrow-right-24: Ver sección](nevadas/index.md)
+
+- :material-virus:{ .lg .middle } __Virus / Confinamiento__
+
+    ---
+
+    Sobrevivir en casa 72 h.
+
+    [:octicons-arrow-right-24: Ver sección](virus-confinamiento/index.md)
+
+- :material-battery-alert:{ .lg .middle } __Apagón__
+
+    ---
+
+    Luz, nevera, comunicaciones y calefacción sin red.
+
+    [:octicons-arrow-right-24: Ver sección](apagon/index.md)
+
+</div>
 
 ## Temas transversales
 
-- 💧 **[Agua](agua/index.md)** — almacenamiento, potabilización y filtrado.
-- 🥫 **[Alimentación](alimentacion/index.md)** — reservas y huerta urbana.
-- ⚕️ **[Salud](salud/index.md)** — primeros auxilios, botiquines y manuales.
-- 📡 **[Comunicaciones](comunicaciones/index.md)** — walkies, radioafición y frecuencias.
-- 📄 **[Documentación](documentacion/index.md)** — manuales y PDF de referencia.
-- 🔦 **[Energía / luz](energia-luz/index.md)** — iluminación y energía de respaldo.
-- 🛠️ **[Herramientas](herramientas/index.md)** — nudos, ganzúas y bricolaje de emergencia.
+<div class="grid cards" markdown>
 
-Usa el buscador o el menú lateral para navegar. Para añadir o editar contenido se crea o modifica un archivo `.md` en la carpeta `docs/` del repositorio; la web se actualiza sola con GitHub Actions.
+- :material-cup-water:{ .lg .middle } __Agua__
 
-Esta web es estática (MkDocs), alojada en GitHub Pages.
- ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
+    ---
 
-## Escenarios
+    Almacenamiento, potabilización y filtrado.
 
-- 🌊 **[Inundación# Wiki Preparacionismo
+    [:octicons-arrow-right-24: Ver sección](agua/index.md)
 
-Recopilación de recursos, técnicas y materiales para la [preparación](https://es.wikipedia.org/wiki/Supervivencia) ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
+- :material-food-apple:{ .lg .middle } __Alimentación__
 
-## Escenarios
+    ---
 
-- 🌊 **[Inundación](inundacion/index.md)** — qué hacer antes, durante y después de una crecida.
-- 🔥 **[Fuego](fuego/index.md)** — prevención, evacuación y extinción de incendios.
-- ❄️ **[Nevadas](nevadas/index.md)** — cortes, aislamiento y frío.
-- 🦠 **[Virus / Confinamiento](virus-confinamiento/index.md)** — sobrevivir en casa 72 h.
-- 🔌 **[Apagón](apagon/index.md)** — luz, nevera, comunicaciones y calefacción sin red.
+    Reservas y huerta urbana.
 
-## Temas transversales
+    [:octicons-arrow-right-24: Ver sección](alimentacion/index.md)
 
-- 💧 **[Agua](agua/index.md)** — almacenamiento, potabilización y filtrado.
-- 🥫 **[Alimentación](alimentacion/index.md)** — reservas y huerta urbana.
-- ⚕️ **[Salud](salud/index.md)** — primeros auxilios, botiquines y manuales.
-- 📡 **[Comunicaciones](comunicaciones/index.md)** — walkies, radioafición y frecuencias.
-- 📄 **[Documentación](documentacion/index.md)** — manuales y PDF de referencia.
-- 🔦 **[Energía / luz](energia-luz/index.md)** — iluminación y energía de respaldo.
-- 🛠️ **[Herramientas](herramientas/index.md)** — nudos, ganzúas y bricolaje de emergencia.
+- :material-medical-bag:{ .lg .middle } __Salud__
 
-Usa el buscador o el menú lateral para navegar. Para añadir o editar contenido se crea o modifica un archivo `.md` en la carpeta `docs/` del repositorio; la web se actualiza sola con GitHub Actions.
+    ---
 
-Esta web es estática (MkDocs), alojada en GitHub Pages.
-** — qué hacer antes, durante y después de una crecida.
-- 🔥 **[Fuego# Wiki Preparacionismo
+    Primeros auxilios, botiquines y manuales.
 
-Recopilación de recursos, técnicas y materiales para la [preparación](https://es.wikipedia.org/wiki/Supervivencia) ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
+    [:octicons-arrow-right-24: Ver sección](salud/index.md)
 
-## Escenarios
+- :material-radio:{ .lg .middle } __Comunicaciones__
 
-- 🌊 **[Inundación](inundacion/index.md)** — qué hacer antes, durante y después de una crecida.
-- 🔥 **[Fuego](fuego/index.md)** — prevención, evacuación y extinción de incendios.
-- ❄️ **[Nevadas](nevadas/index.md)** — cortes, aislamiento y frío.
-- 🦠 **[Virus / Confinamiento](virus-confinamiento/index.md)** — sobrevivir en casa 72 h.
-- 🔌 **[Apagón](apagon/index.md)** — luz, nevera, comunicaciones y calefacción sin red.
+    ---
 
-## Temas transversales
+    Walkies, radioafición y frecuencias.
 
-- 💧 **[Agua](agua/index.md)** — almacenamiento, potabilización y filtrado.
-- 🥫 **[Alimentación](alimentacion/index.md)** — reservas y huerta urbana.
-- ⚕️ **[Salud](salud/index.md)** — primeros auxilios, botiquines y manuales.
-- 📡 **[Comunicaciones](comunicaciones/index.md)** — walkies, radioafición y frecuencias.
-- 📄 **[Documentación](documentacion/index.md)** — manuales y PDF de referencia.
-- 🔦 **[Energía / luz](energia-luz/index.md)** — iluminación y energía de respaldo.
-- 🛠️ **[Herramientas](herramientas/index.md)** — nudos, ganzúas y bricolaje de emergencia.
+    [:octicons-arrow-right-24: Ver sección](comunicaciones/index.md)
 
-Usa el buscador o el menú lateral para navegar. Para añadir o editar contenido se crea o modifica un archivo `.md` en la carpeta `docs/` del repositorio; la web se actualiza sola con GitHub Actions.
+- :material-file-document:{ .lg .middle } __Documentación__
 
-Esta web es estática (MkDocs), alojada en GitHub Pages.
-** — prevención, evacuación y extinción de incendios.
-- ❄️ **[Nevadas# Wiki Preparacionismo
+    ---
 
-Recopilación de recursos, técnicas y materiales para la [preparación](https://es.wikipedia.org/wiki/Supervivencia) ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
+    Manuales y PDF de referencia.
 
-## Escenarios
+    [:octicons-arrow-right-24: Ver sección](documentacion/index.md)
 
-- 🌊 **[Inundación](inundacion/index.md)** — qué hacer antes, durante y después de una crecida.
-- 🔥 **[Fuego](fuego/index.md)** — prevención, evacuación y extinción de incendios.
-- ❄️ **[Nevadas](nevadas/index.md)** — cortes, aislamiento y frío.
-- 🦠 **[Virus / Confinamiento](virus-confinamiento/index.md)** — sobrevivir en casa 72 h.
-- 🔌 **[Apagón](apagon/index.md)** — luz, nevera, comunicaciones y calefacción sin red.
+- :material-lightbulb-on:{ .lg .middle } __Energía / luz__
 
-## Temas transversales
+    ---
 
-- 💧 **[Agua](agua/index.md)** — almacenamiento, potabilización y filtrado.
-- 🥫 **[Alimentación](alimentacion/index.md)** — reservas y huerta urbana.
-- ⚕️ **[Salud](salud/index.md)** — primeros auxilios, botiquines y manuales.
-- 📡 **[Comunicaciones](comunicaciones/index.md)** — walkies, radioafición y frecuencias.
-- 📄 **[Documentación](documentacion/index.md)** — manuales y PDF de referencia.
-- 🔦 **[Energía / luz](energia-luz/index.md)** — iluminación y energía de respaldo.
-- 🛠️ **[Herramientas](herramientas/index.md)** — nudos, ganzúas y bricolaje de emergencia.
+    Iluminación y energía de respaldo.
 
-Usa el buscador o el menú lateral para navegar. Para añadir o editar contenido se crea o modifica un archivo `.md` en la carpeta `docs/` del repositorio; la web se actualiza sola con GitHub Actions.
+    [:octicons-arrow-right-24: Ver sección](energia-luz/index.md)
 
-Esta web es estática (MkDocs), alojada en GitHub Pages.
-** — cortes, aislamiento y frío.
-- 🦠 **[Virus / Confinamiento# Wiki Preparacionismo
+- :material-tools:{ .lg .middle } __Herramientas__
 
-Recopilación de recursos, técnicas y materiales para la [preparación](https://es.wikipedia.org/wiki/Supervivencia) ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
+    ---
 
-## Escenarios
+    Nudos, ganzúas y bricolaje de emergencia.
 
-- 🌊 **[Inundación](inundacion/index.md)** — qué hacer antes, durante y después de una crecida.
-- 🔥 **[Fuego](fuego/index.md)** — prevención, evacuación y extinción de incendios.
-- ❄️ **[Nevadas](nevadas/index.md)** — cortes, aislamiento y frío.
-- 🦠 **[Virus / Confinamiento](virus-confinamiento/index.md)** — sobrevivir en casa 72 h.
-- 🔌 **[Apagón](apagon/index.md)** — luz, nevera, comunicaciones y calefacción sin red.
+    [:octicons-arrow-right-24: Ver sección](herramientas/index.md)
 
-## Temas transversales
+</div>
 
-- 💧 **[Agua](agua/index.md)** — almacenamiento, potabilización y filtrado.
-- 🥫 **[Alimentación](alimentacion/index.md)** — reservas y huerta urbana.
-- ⚕️ **[Salud](salud/index.md)** — primeros auxilios, botiquines y manuales.
-- 📡 **[Comunicaciones](comunicaciones/index.md)** — walkies, radioafición y frecuencias.
-- 📄 **[Documentación](documentacion/index.md)** — manuales y PDF de referencia.
-- 🔦 **[Energía / luz](energia-luz/index.md)** — iluminación y energía de respaldo.
-- 🛠️ **[Herramientas](herramientas/index.md)** — nudos, ganzúas y bricolaje de emergencia.
-
-Usa el buscador o el menú lateral para navegar. Para añadir o editar contenido se crea o modifica un archivo `.md` en la carpeta `docs/` del repositorio; la web se actualiza sola con GitHub Actions.
-
-Esta web es estática (MkDocs), alojada en GitHub Pages.
-** — sobrevivir en casa 72 h.
-- 🔌 **[Apagón# Wiki Preparacionismo
-
-Recopilación de recursos, técnicas y materiales para la [preparación](https://es.wikipedia.org/wiki/Supervivencia) ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
-
-## Escenarios
-
-- 🌊 **[Inundación](inundacion/index.md)** — qué hacer antes, durante y después de una crecida.
-- 🔥 **[Fuego](fuego/index.md)** — prevención, evacuación y extinción de incendios.
-- ❄️ **[Nevadas](nevadas/index.md)** — cortes, aislamiento y frío.
-- 🦠 **[Virus / Confinamiento](virus-confinamiento/index.md)** — sobrevivir en casa 72 h.
-- 🔌 **[Apagón](apagon/index.md)** — luz, nevera, comunicaciones y calefacción sin red.
-
-## Temas transversales
-
-- 💧 **[Agua](agua/index.md)** — almacenamiento, potabilización y filtrado.
-- 🥫 **[Alimentación](alimentacion/index.md)** — reservas y huerta urbana.
-- ⚕️ **[Salud](salud/index.md)** — primeros auxilios, botiquines y manuales.
-- 📡 **[Comunicaciones](comunicaciones/index.md)** — walkies, radioafición y frecuencias.
-- 📄 **[Documentación](documentacion/index.md)** — manuales y PDF de referencia.
-- 🔦 **[Energía / luz](energia-luz/index.md)** — iluminación y energía de respaldo.
-- 🛠️ **[Herramientas](herramientas/index.md)** — nudos, ganzúas y bricolaje de emergencia.
-
-Usa el buscador o el menú lateral para navegar. Para añadir o editar contenido se crea o modifica un archivo `.md` en la carpeta `docs/` del repositorio; la web se actualiza sola con GitHub Actions.
-
-Esta web es estática (MkDocs), alojada en GitHub Pages.
-** — luz, nevera, comunicaciones y calefacción sin red.
-
-## Temas transversales
-
-- 💧 **[Agua# Wiki Preparacionismo
-
-Recopilación de recursos, técnicas y materiales para la [preparación](https://es.wikipedia.org/wiki/Supervivencia) ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
-
-## Escenarios
-
-- 🌊 **[Inundación](inundacion/index.md)** — qué hacer antes, durante y después de una crecida.
-- 🔥 **[Fuego](fuego/index.md)** — prevención, evacuación y extinción de incendios.
-- ❄️ **[Nevadas](nevadas/index.md)** — cortes, aislamiento y frío.
-- 🦠 **[Virus / Confinamiento](virus-confinamiento/index.md)** — sobrevivir en casa 72 h.
-- 🔌 **[Apagón](apagon/index.md)** — luz, nevera, comunicaciones y calefacción sin red.
-
-## Temas transversales
-
-- 💧 **[Agua](agua/index.md)** — almacenamiento, potabilización y filtrado.
-- 🥫 **[Alimentación](alimentacion/index.md)** — reservas y huerta urbana.
-- ⚕️ **[Salud](salud/index.md)** — primeros auxilios, botiquines y manuales.
-- 📡 **[Comunicaciones](comunicaciones/index.md)** — walkies, radioafición y frecuencias.
-- 📄 **[Documentación](documentacion/index.md)** — manuales y PDF de referencia.
-- 🔦 **[Energía / luz](energia-luz/index.md)** — iluminación y energía de respaldo.
-- 🛠️ **[Herramientas](herramientas/index.md)** — nudos, ganzúas y bricolaje de emergencia.
-
-Usa el buscador o el menú lateral para navegar. Para añadir o editar contenido se crea o modifica un archivo `.md` en la carpeta `docs/` del repositorio; la web se actualiza sola con GitHub Actions.
-
-Esta web es estática (MkDocs), alojada en GitHub Pages.
-** — almacenamiento, potabilización y filtrado.
-- 🥫 **[Alimentación# Wiki Preparacionismo
-
-Recopilación de recursos, técnicas y materiales para la [preparación](https://es.wikipedia.org/wiki/Supervivencia) ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
-
-## Escenarios
-
-- 🌊 **[Inundación](inundacion/index.md)** — qué hacer antes, durante y después de una crecida.
-- 🔥 **[Fuego](fuego/index.md)** — prevención, evacuación y extinción de incendios.
-- ❄️ **[Nevadas](nevadas/index.md)** — cortes, aislamiento y frío.
-- 🦠 **[Virus / Confinamiento](virus-confinamiento/index.md)** — sobrevivir en casa 72 h.
-- 🔌 **[Apagón](apagon/index.md)** — luz, nevera, comunicaciones y calefacción sin red.
-
-## Temas transversales
-
-- 💧 **[Agua](agua/index.md)** — almacenamiento, potabilización y filtrado.
-- 🥫 **[Alimentación](alimentacion/index.md)** — reservas y huerta urbana.
-- ⚕️ **[Salud](salud/index.md)** — primeros auxilios, botiquines y manuales.
-- 📡 **[Comunicaciones](comunicaciones/index.md)** — walkies, radioafición y frecuencias.
-- 📄 **[Documentación](documentacion/index.md)** — manuales y PDF de referencia.
-- 🔦 **[Energía / luz](energia-luz/index.md)** — iluminación y energía de respaldo.
-- 🛠️ **[Herramientas](herramientas/index.md)** — nudos, ganzúas y bricolaje de emergencia.
-
-Usa el buscador o el menú lateral para navegar. Para añadir o editar contenido se crea o modifica un archivo `.md` en la carpeta `docs/` del repositorio; la web se actualiza sola con GitHub Actions.
-
-Esta web es estática (MkDocs), alojada en GitHub Pages.
-** — reservas y huerta urbana.
-- ⚕️ **[Salud# Wiki Preparacionismo
-
-Recopilación de recursos, técnicas y materiales para la [preparación](https://es.wikipedia.org/wiki/Supervivencia) ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
-
-## Escenarios
-
-- 🌊 **[Inundación](inundacion/index.md)** — qué hacer antes, durante y después de una crecida.
-- 🔥 **[Fuego](fuego/index.md)** — prevención, evacuación y extinción de incendios.
-- ❄️ **[Nevadas](nevadas/index.md)** — cortes, aislamiento y frío.
-- 🦠 **[Virus / Confinamiento](virus-confinamiento/index.md)** — sobrevivir en casa 72 h.
-- 🔌 **[Apagón](apagon/index.md)** — luz, nevera, comunicaciones y calefacción sin red.
-
-## Temas transversales
-
-- 💧 **[Agua](agua/index.md)** — almacenamiento, potabilización y filtrado.
-- 🥫 **[Alimentación](alimentacion/index.md)** — reservas y huerta urbana.
-- ⚕️ **[Salud](salud/index.md)** — primeros auxilios, botiquines y manuales.
-- 📡 **[Comunicaciones](comunicaciones/index.md)** — walkies, radioafición y frecuencias.
-- 📄 **[Documentación](documentacion/index.md)** — manuales y PDF de referencia.
-- 🔦 **[Energía / luz](energia-luz/index.md)** — iluminación y energía de respaldo.
-- 🛠️ **[Herramientas](herramientas/index.md)** — nudos, ganzúas y bricolaje de emergencia.
-
-Usa el buscador o el menú lateral para navegar. Para añadir o editar contenido se crea o modifica un archivo `.md` en la carpeta `docs/` del repositorio; la web se actualiza sola con GitHub Actions.
-
-Esta web es estática (MkDocs), alojada en GitHub Pages.
-** — primeros auxilios, botiquines y manuales.
-- 📡 **[Comunicaciones# Wiki Preparacionismo
-
-Recopilación de recursos, técnicas y materiales para la [preparación](https://es.wikipedia.org/wiki/Supervivencia) ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
-
-## Escenarios
-
-- 🌊 **[Inundación](inundacion/index.md)** — qué hacer antes, durante y después de una crecida.
-- 🔥 **[Fuego](fuego/index.md)** — prevención, evacuación y extinción de incendios.
-- ❄️ **[Nevadas](nevadas/index.md)** — cortes, aislamiento y frío.
-- 🦠 **[Virus / Confinamiento](virus-confinamiento/index.md)** — sobrevivir en casa 72 h.
-- 🔌 **[Apagón](apagon/index.md)** — luz, nevera, comunicaciones y calefacción sin red.
-
-## Temas transversales
-
-- 💧 **[Agua](agua/index.md)** — almacenamiento, potabilización y filtrado.
-- 🥫 **[Alimentación](alimentacion/index.md)** — reservas y huerta urbana.
-- ⚕️ **[Salud](salud/index.md)** — primeros auxilios, botiquines y manuales.
-- 📡 **[Comunicaciones](comunicaciones/index.md)** — walkies, radioafición y frecuencias.
-- 📄 **[Documentación](documentacion/index.md)** — manuales y PDF de referencia.
-- 🔦 **[Energía / luz](energia-luz/index.md)** — iluminación y energía de respaldo.
-- 🛠️ **[Herramientas](herramientas/index.md)** — nudos, ganzúas y bricolaje de emergencia.
-
-Usa el buscador o el menú lateral para navegar. Para añadir o editar contenido se crea o modifica un archivo `.md` en la carpeta `docs/` del repositorio; la web se actualiza sola con GitHub Actions.
-
-Esta web es estática (MkDocs), alojada en GitHub Pages.
-** — walkies, radioafición y frecuencias.
-- 📄 **[Documentación# Wiki Preparacionismo
-
-Recopilación de recursos, técnicas y materiales para la [preparación](https://es.wikipedia.org/wiki/Supervivencia) ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
-
-## Escenarios
-
-- 🌊 **[Inundación](inundacion/index.md)** — qué hacer antes, durante y después de una crecida.
-- 🔥 **[Fuego](fuego/index.md)** — prevención, evacuación y extinción de incendios.
-- ❄️ **[Nevadas](nevadas/index.md)** — cortes, aislamiento y frío.
-- 🦠 **[Virus / Confinamiento](virus-confinamiento/index.md)** — sobrevivir en casa 72 h.
-- 🔌 **[Apagón](apagon/index.md)** — luz, nevera, comunicaciones y calefacción sin red.
-
-## Temas transversales
-
-- 💧 **[Agua](agua/index.md)** — almacenamiento, potabilización y filtrado.
-- 🥫 **[Alimentación](alimentacion/index.md)** — reservas y huerta urbana.
-- ⚕️ **[Salud](salud/index.md)** — primeros auxilios, botiquines y manuales.
-- 📡 **[Comunicaciones](comunicaciones/index.md)** — walkies, radioafición y frecuencias.
-- 📄 **[Documentación](documentacion/index.md)** — manuales y PDF de referencia.
-- 🔦 **[Energía / luz](energia-luz/index.md)** — iluminación y energía de respaldo.
-- 🛠️ **[Herramientas](herramientas/index.md)** — nudos, ganzúas y bricolaje de emergencia.
-
-Usa el buscador o el menú lateral para navegar. Para añadir o editar contenido se crea o modifica un archivo `.md` en la carpeta `docs/` del repositorio; la web se actualiza sola con GitHub Actions.
-
-Esta web es estática (MkDocs), alojada en GitHub Pages.
-** — manuales y PDF de referencia.
-- 🔦 **[Energía / luz# Wiki Preparacionismo
-
-Recopilación de recursos, técnicas y materiales para la [preparación](https://es.wikipedia.org/wiki/Supervivencia) ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
-
-## Escenarios
-
-- 🌊 **[Inundación](inundacion/index.md)** — qué hacer antes, durante y después de una crecida.
-- 🔥 **[Fuego](fuego/index.md)** — prevención, evacuación y extinción de incendios.
-- ❄️ **[Nevadas](nevadas/index.md)** — cortes, aislamiento y frío.
-- 🦠 **[Virus / Confinamiento](virus-confinamiento/index.md)** — sobrevivir en casa 72 h.
-- 🔌 **[Apagón](apagon/index.md)** — luz, nevera, comunicaciones y calefacción sin red.
-
-## Temas transversales
-
-- 💧 **[Agua](agua/index.md)** — almacenamiento, potabilización y filtrado.
-- 🥫 **[Alimentación](alimentacion/index.md)** — reservas y huerta urbana.
-- ⚕️ **[Salud](salud/index.md)** — primeros auxilios, botiquines y manuales.
-- 📡 **[Comunicaciones](comunicaciones/index.md)** — walkies, radioafición y frecuencias.
-- 📄 **[Documentación](documentacion/index.md)** — manuales y PDF de referencia.
-- 🔦 **[Energía / luz](energia-luz/index.md)** — iluminación y energía de respaldo.
-- 🛠️ **[Herramientas](herramientas/index.md)** — nudos, ganzúas y bricolaje de emergencia.
-
-Usa el buscador o el menú lateral para navegar. Para añadir o editar contenido se crea o modifica un archivo `.md` en la carpeta `docs/` del repositorio; la web se actualiza sola con GitHub Actions.
-
-Esta web es estática (MkDocs), alojada en GitHub Pages.
-** — iluminación y energía de respaldo.
-- 🛠️ **[Herramientas# Wiki Preparacionismo
-
-Recopilación de recursos, técnicas y materiales para la [preparación](https://es.wikipedia.org/wiki/Supervivencia) ante situaciones concretas: inundaciones, incendios, nevadas y confinamientos (virus u otras causas).
-
-## Escenarios
-
-- 🌊 **[Inundación](inundacion/index.md)** — qué hacer antes, durante y después de una crecida.
-- 🔥 **[Fuego](fuego/index.md)** — prevención, evacuación y extinción de incendios.
-- ❄️ **[Nevadas](nevadas/index.md)** — cortes, aislamiento y frío.
-- 🦠 **[Virus / Confinamiento](virus-confinamiento/index.md)** — sobrevivir en casa 72 h.
-- 🔌 **[Apagón](apagon/index.md)** — luz, nevera, comunicaciones y calefacción sin red.
-
-## Temas transversales
-
-- 💧 **[Agua](agua/index.md)** — almacenamiento, potabilización y filtrado.
-- 🥫 **[Alimentación](alimentacion/index.md)** — reservas y huerta urbana.
-- ⚕️ **[Salud](salud/index.md)** — primeros auxilios, botiquines y manuales.
-- 📡 **[Comunicaciones](comunicaciones/index.md)** — walkies, radioafición y frecuencias.
-- 📄 **[Documentación](documentacion/index.md)** — manuales y PDF de referencia.
-- 🔦 **[Energía / luz](energia-luz/index.md)** — iluminación y energía de respaldo.
-- 🛠️ **[Herramientas](herramientas/index.md)** — nudos, ganzúas y bricolaje de emergencia.
-
-Usa el buscador o el menú lateral para navegar. Para añadir o editar contenido se crea o modifica un archivo `.md` en la carpeta `docs/` del repositorio; la web se actualiza sola con GitHub Actions.
-
-Esta web es estática (MkDocs), alojada en GitHub Pages.
-** — nudos, ganzúas y bricolaje de emergencia.
-
-Usa el buscador o el menú lateral para navegar. Para añadir o editar contenido se crea o modifica un archivo `.md` en la carpeta `docs/` del repositorio; la web se actualiza sola con GitHub Actions.
-
-Esta web es estática (MkDocs), alojada en GitHub Pages.
+*Usa el buscador o el menú lateral para navegar.*

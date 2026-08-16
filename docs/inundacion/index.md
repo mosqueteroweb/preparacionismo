@@ -1,6 +1,15 @@
 # 🌊 Inundación
 
-Artículos en esta sección:
+Artículos sobre qué hacer ante una crecida:
 
-- [Evacuación por inundación](evacuacion-por-inundacion.md)
+<div class="grid cards" markdown>
 
+- __Evacuación por inundación__
+
+    ---
+
+    Decálogo de evacuación por inundación: qué hacer antes, durante y después.
+
+    [:octicons-arrow-right-24: Leer](evacuacion-por-inundacion.md)
+
+</div>
